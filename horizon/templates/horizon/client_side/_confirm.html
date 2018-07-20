@@ -1,0 +1,24 @@
+{% extends "horizon/client_side/template.html" %}
+{% load i18n horizon %}
+
+{% block id %}confirm_modal{% endblock %}
+
+{% block template %}{% spaceless %}{% jstemplate %}
+  <div class="confirm-wrapper">
+    <span class="confirm-list">
+      {% blocktrans %}You have selected: [[selection]]. {% endblocktrans %}
+    </span>
+    <ul>
+      <li style="margin:5px;">
+        <span class="confirm-text">{% trans 'Please confirm your selection.'%} </span>
+        <span class="confirm-help">[[help]]</span>
+      </li>
+      <li style="margin:5px;">
+        <label class="control-label"><span class="field-label confirm-reason">{% trans 'Please input reason: ' %}</span></label>
+      </li>
+      <li style="list-style-type:none;margin:5px;">
+        <span class="confirm-reason-input" style="margin-left:0px;"><textarea id="confirm-reason-textarea" rows="3" cols="40"></textarea></span>
+      </li>
+    </ul>
+  </div>
+{% endjstemplate %}{% endspaceless %}{% endblock %}

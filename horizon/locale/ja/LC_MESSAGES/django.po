@@ -1,0 +1,534 @@
+# Yuko Katabami <yukokatabami@gmail.com>, 2015. #zanata
+# Mie Yamamoto <myamamot@redhat.com>, 2016. #zanata
+# Yuko Katabami <yukokatabami@gmail.com>, 2016. #zanata
+# Akihiro Motoki <amotoki@gmail.com>, 2017. #zanata
+# Yuko Katabami <yukokatabami@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 13.0.0.0b2.dev91\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2017-11-16 08:07+0000\n"
+"Last-Translator: Akihiro Motoki <amotoki@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: horizon/base.py:511
+msgid "Other"
+msgstr "その他"
+
+#: horizon/browsers/base.py:88
+msgid "Navigation Item"
+msgstr "ナビゲーション項目"
+
+#: horizon/browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "表示する %s を選択してください。"
+
+#: horizon/browsers/views.py:75 horizon/templatetags/branding.py:34
+msgid "Horizon"
+msgstr "Horizon"
+
+#: horizon/conf/default.py:44
+msgid "Password is not accepted"
+msgstr "パスワードを受け付けられません"
+
+#: horizon/decorators.py:53
+msgid "Please log in to continue."
+msgstr "続行するには、ログインしてください。"
+
+#: horizon/decorators.py:85
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "%s へのアクセスが許可されていません。"
+
+#: horizon/exceptions.py:119
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "名前が \"%(name)s\" の %(resource)s がすでに存在します。"
+
+#: horizon/exceptions.py:137
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+"このテンプレート内での %(resource)s の値は %(name)s です。このインターフェー"
+"スからスタックを起動するには  \"http://\" または \"https://\" で開始する値を"
+"指定する必要があります。"
+
+#: horizon/exceptions.py:224
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "権限がありません: %s"
+
+#: horizon/exceptions.py:227 horizon/templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr "認証されていません。もう一度ログインしてください。"
+
+#: horizon/forms/fields.py:73
+msgid "Incorrect format for IP address"
+msgstr "不正な形式の IP アドレス"
+
+#: horizon/forms/fields.py:74
+msgid "Invalid version for IP address"
+msgstr "無効な IP アドレスのバージョン"
+
+#: horizon/forms/fields.py:75
+msgid "Invalid subnet mask"
+msgstr "無効なサブネットマスク"
+
+#: horizon/forms/fields.py:153
+msgid "Invalid MAC Address format"
+msgstr "無効な MAC アドレスの形式"
+
+#: horizon/forms/views.py:139
+#: horizon/templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "送信"
+
+#: horizon/forms/views.py:140
+#: horizon/templates/horizon/common/_workflow.html:52
+#: horizon/templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "取り消し"
+
+#: horizon/notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr ""
+"メッセージの json ファイル '%(path)s' の形式が正しくありません。%(exception)s"
+
+#: horizon/notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr ""
+"メッセージの json ファイル '%(path)s' の処理でエラーが発生しました: "
+"%(exception)s"
+
+#: horizon/tables/actions.py:477
+#: horizon/templates/horizon/common/_data_table_table_actions.html:21
+#: horizon/templates/horizon/common/_data_table_table_actions.html:31
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:14
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:23
+msgid "Filter"
+msgstr "フィルター"
+
+#: horizon/tables/actions.py:656
+msgid "This action cannot be undone."
+msgstr "この操作は取り消せません。"
+
+#: horizon/tables/actions.py:789
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "%(action)s は許可されていません:  %(objs)s"
+
+#: horizon/tables/actions.py:796
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "%(action)s を実行できません: %(objs)s"
+
+#: horizon/tables/actions.py:802
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:909
+msgid "Update Item"
+msgid_plural "Update Items"
+msgstr[0] "項目の更新"
+
+#: horizon/tables/actions.py:917
+msgid "Updated Item"
+msgid_plural "Updated Items"
+msgstr[0] "項目を更新しました"
+
+#: horizon/tables/base.py:333
+msgid "-"
+msgstr "-"
+
+#: horizon/tables/base.py:1105
+msgid "No items to display."
+msgstr "表示する項目がありません"
+
+#: horizon/tables/base.py:1173
+msgid "Please specify a search criteria first."
+msgstr "まず最初に、検索条件を指定してください。"
+
+#: horizon/tables/base.py:1229
+#: horizon/templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "アクション"
+
+#: horizon/tables/base.py:1484
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "ID \"%s\" に一致するものがありません。"
+
+#: horizon/tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "このアクションを実行する前に、対象を選択してください。"
+
+#: horizon/templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr "使用する認証メソッドが不明な場合は、管理者に問い合わせてください。"
+
+#: horizon/templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr "ログイン"
+
+#: horizon/templates/auth/_login_form.html:39
+msgid "You do not have permission to access the resource:"
+msgstr "リソースにアクセスする権限がありません:"
+
+#: horizon/templates/auth/_login_form.html:48
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+"別のユーザーとしてログインするか、<a href=\"%(home_url)s\">ホームページ</a> "
+"に戻ってください。"
+
+#: horizon/templates/auth/_login_form.html:74
+msgid "Sign In"
+msgstr "ログイン"
+
+#: horizon/templates/auth/_login_form.html:75
+msgid "Connect"
+msgstr "接続"
+
+#: horizon/templates/auth/login.html:4 horizon/templates/not_authorized.html:9
+msgid "Login"
+msgstr "ログイン"
+
+#: horizon/templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "情報: "
+
+#: horizon/templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "警告: "
+
+#: horizon/templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "成功: "
+
+#: horizon/templates/horizon/_messages.html:34
+msgid "Error: "
+msgstr "エラー: "
+
+#: horizon/templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr "[[selection]] を選択しました。"
+
+#: horizon/templates/horizon/client_side/_confirm.html:13
+msgid "Please confirm your selection."
+msgstr "選択内容を確認してください。"
+
+#: horizon/templates/horizon/client_side/_confirm.html:17
+msgid "Please input reason: "
+msgstr ""
+
+#: horizon/templates/horizon/common/_data_table.html:68
+msgid "Summary"
+msgstr "概要"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:4
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "%(counter)s件表示"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;前へ"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:14
+msgid "Next&nbsp;&raquo;"
+msgstr "次へ&nbsp;&raquo;"
+
+#: horizon/templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "その他のアクション"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr "使用状況を照会する期間を選択してください:"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr "日付は YYYY-MM-DD 形式にする必要があります。"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr "から"
+
+#: horizon/templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr "%(context_name)s:"
+
+#: horizon/templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "行の追加"
+
+#: horizon/templates/horizon/common/_formset_table_row.html:15
+#, python-format
+msgid "%(name)s: %(error)s"
+msgstr "%(name)s: %(error)s"
+
+#: horizon/templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr "Keystone プロバイダー:"
+
+#: horizon/templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "利用可能リソース概要"
+
+#: horizon/templates/horizon/common/_limit_summary.html:16
+#: horizon/templates/horizon/common/_limit_summary.html:20
+#: horizon/templates/horizon/common/_limit_summary.html:24
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+msgstr "<span> %(available)s </span> 中 <span> %(used)s </span> %(usedphrase)s"
+
+#: horizon/templates/horizon/common/_limit_summary.html:29
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+msgstr "<span> %(used)s </span> 個%(usedphrase)s (制限なし)"
+
+#: horizon/templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "%(nav_items)s件表示"
+
+#: horizon/templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "%(content_items)s件表示"
+
+#: horizon/templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "使用状況の概要"
+
+#: horizon/templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr "稼働中のインスタンス:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "使用中のメモリー:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr "指定期間中の仮想 CPU 時間:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr "指定期間中の GB 時間:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr "指定期間中のメモリー時間"
+
+#: horizon/templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "戻る"
+
+#: horizon/templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "次へ"
+
+#: horizon/templates/not_authorized.html:8
+msgid "You are not authorized to access this page"
+msgstr "このページへのアクセスが許可されていません。"
+
+#: horizon/templatetags/horizon.py:161
+msgid "(No Limit)"
+msgstr "(制限なし)"
+
+#: horizon/templatetags/horizon.py:164 horizon/templatetags/horizon.py:166
+msgid "Available"
+msgstr "利用可能"
+
+#: horizon/templatetags/sizeformat.py:51 horizon/templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] "%(size)d B"
+
+#: horizon/templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr "無制限"
+
+#: horizon/templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: horizon/templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: horizon/templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: horizon/templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: horizon/templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: horizon/templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr "%s EB"
+
+#: horizon/templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr "%s ZB"
+
+#: horizon/templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr "%s YB"
+
+#: horizon/templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 バイト"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] "子犬を売る"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] "子犬を売りました"
+
+#: horizon/test/unit/tables/test_tables.py:141
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] "Batch Item"
+
+#: horizon/test/unit/tables/test_tables.py:150
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] "Batched Item"
+
+#: horizon/test/unit/tables/test_tables.py:178
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] "Up Item"
+
+#: horizon/test/unit/tables/test_tables.py:185
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] "Down Item"
+
+#: horizon/test/unit/tables/test_tables.py:194
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] "Upped Item"
+
+#: horizon/test/unit/tables/test_tables.py:201
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] "Downed Item"
+
+#: horizon/test/unit/test_views.py:58
+msgid "Fake"
+msgstr "Fake"
+
+#: horizon/utils/filters.py:50
+msgid "Never"
+msgstr "なし"
+
+#: horizon/utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "有効なポート番号ではありません"
+
+#: horizon/utils/validators.py:35
+msgid "Not a valid ICMP type"
+msgstr "有効な ICMP 種別ではありません。"
+
+#: horizon/utils/validators.py:42
+msgid "Not a valid ICMP code"
+msgstr "有効な ICMP コードではありません。"
+
+#: horizon/utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "有効な IP プロトコル番号ではありません"
+
+#: horizon/utils/validators.py:72
+msgid "One colon allowed in port range"
+msgstr "ポート範囲で使用できるコロンは 1 つだけです。"
+
+#: horizon/utils/validators.py:79
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr ""
+"メタデータのエントリーが無効です。コンマ区切りの key=value ペアを使用してくだ"
+"さい。"
+
+#: horizon/utils/validators.py:95
+msgid "The string may only contain ASCII printable characters."
+msgstr "文字列に含めることができるのは ASCII 印字可能文字のみです。"
+
+#: horizon/workflows/base.py:78 horizon/workflows/base.py:236
+msgid "Processing..."
+msgstr "処理中..."
+
+#: horizon/workflows/base.py:748
+msgid "All available"
+msgstr "利用可能な全項目"
+
+#: horizon/workflows/base.py:749
+msgid "Members"
+msgstr "メンバー"
+
+#: horizon/workflows/base.py:750
+msgid "None available."
+msgstr "利用可能な項目がありません。"
+
+#: horizon/workflows/base.py:751
+msgid "No members."
+msgstr "メンバーがいません。"
+
+#: horizon/workflows/base.py:862
+msgid "Save"
+msgstr "保存"
+
+#: horizon/workflows/base.py:863
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s が正常に完了しました。"
+
+#: horizon/workflows/base.py:864
+#, python-format
+msgid "%s did not complete."
+msgstr "%s が完了しませんでした。"
+
+#: horizon/workflows/base.py:1117
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr "現在のユーザーは、要求されたタスクを完了するには権限が不十分です。"

@@ -1,0 +1,36 @@
+{% load i18n %}
+{% block help_message %}
+<div>
+  <div>
+    <table class="{% block table_css_classes %}table table-striped datatable {{ table.css_classes }}{% endblock %}">
+      <thead align="center">
+        {% block table_columns %}
+          <tr>
+            <td width=10%>序号</td>
+            <td width=30%>类型</td>
+            <td width=40%>文件名</td>
+            <td width=20%>链接</td>
+          </tr>
+        {% endblock table_columns %}
+      </thead>
+      {% block table_body %}
+      <tbody>
+        {% for row in attachments %}
+          <tr class="{% cycle 'odd' 'even' %} empty" {% if row.hidden %}style="display:none" {% endif %}>
+            <td>{{row.attachment_serial}}</td>
+            <td>{{row.attachment_type}}</td>
+            <td>{{row.attachment_name}}</td>
+            <td><a target="_blank" href="{{ row.attachment_file }}">下载</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      {% endblock table_body %}
+    </table>
+  </div>
+  <div>
+  {% if show_help_text %}
+    <p>上传附件</p>
+  {% endif %}
+  </div>
+</div>
+{% endblock %}

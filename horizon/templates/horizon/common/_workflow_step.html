@@ -1,0 +1,26 @@
+<noscript><h3>{{ step }}</h3></noscript>
+{% if step.horizon_description_field %}
+<div class="row">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4">
+    {{ step.get_help_text }}
+  </div>
+  <div class="col-sm-4">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    {% include "horizon/common/_form_fields.html" %}
+  </div>
+</div>
+{% else %}
+<div class="row">
+  <div class="col-sm-6">
+    {% include "horizon/common/_form_fields.html" %}
+  </div>
+  <div class="col-sm-6">
+    {{ step.get_help_text }}
+  </div>
+</div>
+{% endif %}

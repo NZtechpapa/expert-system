@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}管理项目评审专家{% endblock %}
+
+{% block page_header %}
+  {% include "horizon/common/_page_header.html" with title=page_title %}
+{% endblock page_header %}
+
+{% block main %}
+  <div id="expert_pool">
+    <h2>候选专家列表</h2>
+    {{ candidatetable_table.render }}
+  </div>
+  <div id="binded_experts">
+    <h2>已抽取的评审专家列表</h2>
+    {{ reviewertable_table.render }}
+  </div>
+  <div id="unavailable_reviewers">
+    <h2>无法参与评审之专家列表</h2>
+    {{ unavailablereviewertable_table.render }}
+  </div>
+{% endblock %}
+
+

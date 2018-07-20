@@ -1,0 +1,111 @@
+# suhartono <cloudsuhartono@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 13.0.0.0b2.dev82\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2017-11-15 04:45+0000\n"
+"Last-Translator: suhartono <cloudsuhartono@gmail.com>\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: openstack_auth/backend.py:57
+msgid "The authentication token issued by the Identity service has expired."
+msgstr ""
+"Token otentikasi yang dikeluarkan oleh layanan Identity telah kadaluarsa."
+
+#: openstack_auth/backend.py:109
+msgid ""
+"No authentication backend could be determined to handle the provided "
+"credentials."
+msgstr ""
+"Tidak ada backend otentikasi yang bisa ditentukan untuk menangani kredensial "
+"yang diberikan."
+
+#: openstack_auth/backend.py:155
+msgid "You are not authorized for any projects."
+msgstr "Anda tidak berwenang untuk proyek apa pun."
+
+#: openstack_auth/backend.py:157
+msgid "You are not authorized for any projects or domains."
+msgstr "Anda tidak berwenang untuk proyek atau domain apa pun."
+
+#: openstack_auth/forms.py:51
+msgid "Region"
+msgstr "Region"
+
+#: openstack_auth/forms.py:53
+msgid "User Name"
+msgstr "User Name"
+
+#: openstack_auth/forms.py:55
+msgid "Password"
+msgstr "Password"
+
+#: openstack_auth/forms.py:69 openstack_auth/forms.py:78
+msgid "Domain"
+msgstr "Domain"
+
+#: openstack_auth/forms.py:96
+msgid "Authenticate using"
+msgstr "Otentikasi menggunakan"
+
+#: openstack_auth/plugin/base.py:98
+msgid "Unable to retrieve authorized projects."
+msgstr "Tidak dapat mengambil proyek resmi"
+
+#: openstack_auth/plugin/base.py:110
+msgid "Unable to retrieve authorized domains."
+msgstr "Tidak dapat mengambil domain resmi."
+
+#: openstack_auth/plugin/base.py:129
+msgid "Unable to establish connection to keystone endpoint."
+msgstr "Tidak dapat menjalin koneksi ke keystone endpoint."
+
+#: openstack_auth/plugin/base.py:135
+msgid "Invalid credentials."
+msgstr "Kredensial tidak valid."
+
+#: openstack_auth/plugin/base.py:138
+msgid "An error occurred authenticating. Please try again later."
+msgstr "Terjadi kesalahan saat melakukan otentikasi. Silakan coba lagi nanti."
+
+#: openstack_auth/plugin/k2k.py:84
+msgid "Could not find service provider ID on Keystone."
+msgstr "Tidak dapat menemukan ID penyedia layanan di Keystone."
+
+#: openstack_auth/plugin/k2k.py:105
+#, python-format
+msgid "Service provider authentication failed. %s"
+msgstr "Otentikasi penyedia layanan gagal. %s"
+
+#: openstack_auth/views.py:129
+#, python-format
+msgid "Please consider changing your password, it will expire in %s minutes"
+msgstr ""
+"Mohon pertimbangkan untuk mengubah kata sandi Anda, maka akan kedaluwarsa "
+"dalam %s minutes"
+
+#: openstack_auth/views.py:207
+#, python-format
+msgid "Project switch failed for user \"%(username)s\"."
+msgstr "Peralihan proyek gagal bagi pengguna \"%(username)s\"."
+
+#: openstack_auth/views.py:226
+#, python-format
+msgid "Switch to project \"%(project_name)s\" successful."
+msgstr "Beralih ke proyek \"%(project_name)s\" berhasil."
+
+#: openstack_auth/views.py:273
+msgid "K2K Federation not setup for this session"
+msgstr "K2K Federation tidak disiapkan untuk sesi ini"
+
+#: openstack_auth/views.py:322
+#, python-format
+msgid "Switch to Keystone Provider \"%(keystone_provider)s\"successful."
+msgstr "Beralih ke Keystone Provider \"%(keystone_provider)s\" berhasil."

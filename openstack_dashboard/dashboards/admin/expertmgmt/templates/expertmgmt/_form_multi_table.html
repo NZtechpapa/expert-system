@@ -1,0 +1,32 @@
+<script type="text/javascript">
+  var shownextline = function(cur, next_id) {
+    next = document.getElementById(next_id);
+    cur.style.display = "none";
+    next.style.display = "";
+  };
+</script>
+
+{% for table in form.get_slices %}
+<div style="border: {% if form.noborder %}0px{% else %}1px{% endif %} solid;{% if table.hidden %}display:none;{% endif %}" id="{{ table.id }}">
+  <table class="{% block table_css_classes %}table table-striped datatable{% endblock %}" id="table_{{ table.id }}">
+    {% block table_body %}
+    <tbody>
+      {% for row in table.rows %}
+        <tr id="{{ row.id }}">
+          {% include 'admin/expertmgmt/_form_multi_table_element_field.html' with fields=row.fields  %}
+        </tr>
+      {% endfor %}
+      <tr id="{{ table.actionrowid }}">
+        <td>
+          {% if table.next %}
+            <div id="{{ table.actionid }}" onclick="shownextline( this, '{{ table.next }}' );" {% if not table.shownext %}style="display:none" {% endif %}>
+              <a url="#">{{ table.actiontxt }}</a>
+            </div>
+          {% endif %}
+        </td>
+      </tr>
+    </tbody>
+    {% endblock table_body %}
+  </table>
+</div>
+{% endfor %}

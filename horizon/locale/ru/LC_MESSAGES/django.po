@@ -1,0 +1,579 @@
+# Translations template for PROJECT.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+#
+# Translators:
+# Alexander Vasiliev <avasiliev@asdco.ru>, 2015
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2015
+# Nikita Burtsev, 2015
+# Antonio Kless <antoniok.spb@gmail.com>, 2015. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2015. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# Daisy <guoyingc@cn.ibm.com>, 2016. #zanata
+# Fedor Tarasenko <feodor.tarasenko@gmail.com>, 2016. #zanata
+# Filatov Sergey <filatecs@gmail.com>, 2016. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2016. #zanata
+# Ilya Shakhat <ishakhat@mirantis.com>, 2016. #zanata
+# Maxim Bozhenko <mbozhenko@gmail.com>, 2016. #zanata
+# Nikita Burtsev <nikita.burtsev@gmail.com>, 2016. #zanata
+# Artem <amikhalev90@gmail.com>, 2017. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 13.0.0.0b2.dev82\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2017-11-03 10:13+0000\n"
+"Last-Translator: Ilya Alekseyev <ilyaalekseyev@acm.org>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Generated-By: Babel 2.0\n"
+"X-Generator: Zanata 3.9.6\n"
+
+#: horizon/base.py:511
+msgid "Other"
+msgstr "Другое"
+
+#: horizon/browsers/base.py:88
+msgid "Navigation Item"
+msgstr "Элемент навигации"
+
+#: horizon/browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "Выберите %s для просмотра"
+
+#: horizon/browsers/views.py:75 horizon/templatetags/branding.py:34
+msgid "Horizon"
+msgstr "Horizon"
+
+#: horizon/conf/default.py:44
+msgid "Password is not accepted"
+msgstr "Пароль не принят"
+
+#: horizon/decorators.py:53
+msgid "Please log in to continue."
+msgstr "Войдите в систему для продолжения."
+
+#: horizon/decorators.py:85
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "Нет права доступа к %s"
+
+#: horizon/exceptions.py:119
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "%(resource)s с именем\"%(name)s\" уже существует."
+
+#: horizon/exceptions.py:137
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+"Значение %(resource)s является %(name)s в шаблоне. Для формирования стека из "
+"этого интерфейса значение должно начинаться с \"http://\" или \"https://\""
+
+#: horizon/exceptions.py:224
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "Не авторизован: %s"
+
+#: horizon/exceptions.py:227 horizon/templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr "Вы не авторизованы. Попробуйте войти в систему еще раз."
+
+#: horizon/forms/fields.py:73
+msgid "Incorrect format for IP address"
+msgstr "Неправильный формат IP-адреса"
+
+#: horizon/forms/fields.py:74
+msgid "Invalid version for IP address"
+msgstr "Неправильная версия IP-адреса"
+
+#: horizon/forms/fields.py:75
+msgid "Invalid subnet mask"
+msgstr "Неправильная маска подсети"
+
+#: horizon/forms/fields.py:153
+msgid "Invalid MAC Address format"
+msgstr "Неверный формат MAC адреса"
+
+#: horizon/forms/views.py:139
+#: horizon/templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "Отправить"
+
+#: horizon/forms/views.py:140
+#: horizon/templates/horizon/common/_workflow.html:52
+#: horizon/templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "Отмена"
+
+#: horizon/notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr "JSON файл сообщений '%(path)s' сформирован некорректно. %(exception)s"
+
+#: horizon/notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr "Ошибка обработки JSON файла сообщений  '%(path)s': %(exception)s"
+
+#: horizon/tables/actions.py:477
+#: horizon/templates/horizon/common/_data_table_table_actions.html:21
+#: horizon/templates/horizon/common/_data_table_table_actions.html:31
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:14
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:23
+msgid "Filter"
+msgstr "Фильтр"
+
+#: horizon/tables/actions.py:656
+msgid "This action cannot be undone."
+msgstr "Это действие не может быть отменено."
+
+#: horizon/tables/actions.py:789
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "Вам не разрешено выполнение: %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:796
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "Невозможно выполнить %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:802
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:909
+msgid "Update Item"
+msgid_plural "Update Items"
+msgstr[0] "Обновить элемент"
+msgstr[1] "Обновить элементы"
+msgstr[2] "Обновить элементы"
+
+#: horizon/tables/actions.py:917
+msgid "Updated Item"
+msgid_plural "Updated Items"
+msgstr[0] "Обновленный элемент"
+msgstr[1] "Обновленные элементы"
+msgstr[2] "Обновленные элементы"
+
+#: horizon/tables/base.py:333
+msgid "-"
+msgstr "-"
+
+#: horizon/tables/base.py:1105
+msgid "No items to display."
+msgstr "Нет элементов для отображения."
+
+#: horizon/tables/base.py:1173
+msgid "Please specify a search criteria first."
+msgstr "Пожалуйста, сначала укажите параметры поиска."
+
+#: horizon/tables/base.py:1229
+#: horizon/templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "Действия"
+
+#: horizon/tables/base.py:1484
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "Нет совпадений для id \"%s\"."
+
+#: horizon/tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "Выберите строку перед выполнением этого действия."
+
+#: horizon/templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr ""
+"Если вы не уверены какой метод аутентификации выбрать, свяжитесь с вашим "
+"системным администратором."
+
+#: horizon/templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr "Войти"
+
+#: horizon/templates/auth/_login_form.html:39
+msgid "You do not have permission to access the resource:"
+msgstr "Вы не имеете права на доступ к ресурсу:"
+
+#: horizon/templates/auth/_login_form.html:48
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+"Войдите под другим пользователем или вернитесь на<a href=\"%(home_url)s\"> "
+"домашнюю страницу</a>           "
+
+#: horizon/templates/auth/_login_form.html:74
+msgid "Sign In"
+msgstr "Вход"
+
+#: horizon/templates/auth/_login_form.html:75
+msgid "Connect"
+msgstr "Подключиться"
+
+#: horizon/templates/auth/login.html:4 horizon/templates/not_authorized.html:9
+msgid "Login"
+msgstr "Имя пользователя"
+
+#: horizon/templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "Информация:"
+
+#: horizon/templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "Внимание:"
+
+#: horizon/templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "Успешно:"
+
+#: horizon/templates/horizon/_messages.html:34
+msgid "Error: "
+msgstr "Ошибка:"
+
+#: horizon/templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr "Вы выбрали: [[selection]]. "
+
+#: horizon/templates/horizon/client_side/_confirm.html:13
+msgid "Please confirm your selection."
+msgstr "Подтвердите свой выбор."
+
+#: horizon/templates/horizon/client_side/_confirm.html:17
+msgid "Please input reason: "
+msgstr ""
+
+#: horizon/templates/horizon/common/_data_table.html:68
+msgid "Summary"
+msgstr "Итого"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:4
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "Отображен %(counter)s элемент"
+msgstr[1] "Отображено %(counter)s элементов"
+msgstr[2] "Отображено %(counter)s элементов"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;Предыдущее"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:14
+msgid "Next&nbsp;&raquo;"
+msgstr "Следующее&nbsp;&raquo;"
+
+#: horizon/templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "Еще действия"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr "Выберите временной интервал для запроса использования:"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr "Дата должна быть в формате ГГГГ-ММ-ДД."
+
+#: horizon/templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr "по"
+
+#: horizon/templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr "%(context_name)s:"
+
+#: horizon/templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "Добавить строку"
+
+#: horizon/templates/horizon/common/_formset_table_row.html:15
+#, python-format
+msgid "%(name)s: %(error)s"
+msgstr "%(name)s: %(error)s"
+
+#: horizon/templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr "Провайдеры Keystone:"
+
+#: horizon/templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "Сводка лимитов"
+
+#: horizon/templates/horizon/common/_limit_summary.html:16
+#: horizon/templates/horizon/common/_limit_summary.html:20
+#: horizon/templates/horizon/common/_limit_summary.html:24
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+msgstr ""
+
+#: horizon/templates/horizon/common/_limit_summary.html:29
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+msgstr ""
+
+#: horizon/templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "Отображен %(nav_items)s элемент"
+msgstr[1] "Отображено %(nav_items)s элементов"
+msgstr[2] "Отображено %(nav_items)s элементов"
+
+#: horizon/templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "Отображен %(content_items)s элемент"
+msgstr[1] "Отображено %(content_items)s элементов"
+msgstr[2] "Отображено %(content_items)s элементов"
+
+#: horizon/templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "Сводка использования"
+
+#: horizon/templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr "Активные инстансы:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "Используемая RAM:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr "vCPU-часов за период:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr "ГБ-часов за период:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr "RAM-часов за период:"
+
+#: horizon/templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "Назад"
+
+#: horizon/templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "Следующий"
+
+#: horizon/templates/not_authorized.html:8
+msgid "You are not authorized to access this page"
+msgstr "Вы не авторизованы для доступа к этой странице"
+
+#: horizon/templatetags/horizon.py:161
+msgid "(No Limit)"
+msgstr "(без ограничений)"
+
+#: horizon/templatetags/horizon.py:164 horizon/templatetags/horizon.py:166
+msgid "Available"
+msgstr "Доступно"
+
+#: horizon/templatetags/sizeformat.py:51 horizon/templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] "%(size)d байт"
+msgstr[1] "%(size)d байт"
+msgstr[2] "%(size)d байт"
+
+#: horizon/templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr "Бесконечность"
+
+#: horizon/templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s КБ"
+
+#: horizon/templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s МБ"
+
+#: horizon/templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s ГБ"
+
+#: horizon/templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s ТБ"
+
+#: horizon/templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s ПБ"
+
+#: horizon/templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr "%s Эбайт"
+
+#: horizon/templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr "%s Збайт"
+
+#: horizon/templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr "%s Ибайт"
+
+#: horizon/templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 байт"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] "Продать щенка"
+msgstr[1] "Продать щенков"
+msgstr[2] "Продать щенков"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] "Проданый щенок"
+msgstr[1] "Проданые щенки"
+msgstr[2] "Проданые щенки"
+
+#: horizon/test/unit/tables/test_tables.py:141
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] "Пакетировать элемент"
+msgstr[1] "Пакетировать элементы"
+msgstr[2] "Пакетировать элементы"
+
+#: horizon/test/unit/tables/test_tables.py:150
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] "Пакетированный элемент"
+msgstr[1] "Пакетированные элементы"
+msgstr[2] "Пакетированные элементы"
+
+#: horizon/test/unit/tables/test_tables.py:178
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] "Поднять элемент"
+msgstr[1] "Поднять элементы"
+msgstr[2] "Поднять элементы"
+
+#: horizon/test/unit/tables/test_tables.py:185
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] "Опустить элемент"
+msgstr[1] "Опустить элементы"
+msgstr[2] "Опустить элементы"
+
+#: horizon/test/unit/tables/test_tables.py:194
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] "Поднятый элемент"
+msgstr[1] "Поднятые элементы"
+msgstr[2] "Поднятые элементы"
+
+#: horizon/test/unit/tables/test_tables.py:201
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] "Опущенный элемент"
+msgstr[1] "Опущенные элементы"
+msgstr[2] "Опущенные элементы"
+
+#: horizon/test/unit/test_views.py:58
+msgid "Fake"
+msgstr "Fake"
+
+#: horizon/utils/filters.py:50
+msgid "Never"
+msgstr "Никогда"
+
+#: horizon/utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "Недопустимый номер порта"
+
+#: horizon/utils/validators.py:35
+msgid "Not a valid ICMP type"
+msgstr "Недопустимый тип ICMP"
+
+#: horizon/utils/validators.py:42
+msgid "Not a valid ICMP code"
+msgstr "Недопустимый код ICMP"
+
+#: horizon/utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "Недопустимый номер IP-протокола"
+
+#: horizon/utils/validators.py:72
+msgid "One colon allowed in port range"
+msgstr "В списке портов допустима одна запятая"
+
+#: horizon/utils/validators.py:79
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr ""
+"Некорректная запись метаданных. Используйте пары ключ=значение разделенный "
+"запятой."
+
+#: horizon/utils/validators.py:95
+msgid "The string may only contain ASCII printable characters."
+msgstr "Строка может содержать только печатные ASCII символы."
+
+#: horizon/workflows/base.py:78 horizon/workflows/base.py:236
+msgid "Processing..."
+msgstr "Обработка…"
+
+#: horizon/workflows/base.py:748
+msgid "All available"
+msgstr "Все доступные"
+
+#: horizon/workflows/base.py:749
+msgid "Members"
+msgstr "Участники"
+
+#: horizon/workflows/base.py:750
+msgid "None available."
+msgstr "Нет доступных."
+
+#: horizon/workflows/base.py:751
+msgid "No members."
+msgstr "Нет участников."
+
+#: horizon/workflows/base.py:862
+msgid "Save"
+msgstr "Сохранить"
+
+#: horizon/workflows/base.py:863
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s успешно завершено."
+
+#: horizon/workflows/base.py:864
+#, python-format
+msgid "%s did not complete."
+msgstr "%s не завершено."
+
+#: horizon/workflows/base.py:1117
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr ""
+"Текущий пользователь не имеет прав для совершения запрошенной операции."

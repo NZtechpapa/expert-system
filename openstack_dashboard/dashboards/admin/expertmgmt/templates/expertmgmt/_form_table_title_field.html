@@ -1,0 +1,10 @@
+{% load form_helpers %}
+<th class="{{ field.name }}_width" {% if field.noboder %}style="padding: 0px;"{% endif %}>
+  <div class="form-group{% if field.errors %} has-error{% endif %} {{ field.css_classes }} no_margin_bottom" style="margin-bottom: 0px;">
+    <label class="control-label {{ classes.label }} {% if field.field.required %}{{ form.required_css_class }}{% endif %}" for="{{ field.auto_id }}">
+      <span class="field-label">{{ field.label }}</span>
+    </label>
+    {% include "horizon/common/_form_field_decorator.html" %}
+  </div>
+</th>
+

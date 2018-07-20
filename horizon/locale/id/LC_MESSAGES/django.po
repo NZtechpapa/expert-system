@@ -1,0 +1,530 @@
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# suhartono <cloudsuhartono@gmail.com>, 2016. #zanata
+# suhartono <cloudsuhartono@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 13.0.0.0b2.dev82\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2017-11-15 04:15+0000\n"
+"Last-Translator: suhartono <cloudsuhartono@gmail.com>\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: horizon/base.py:511
+msgid "Other"
+msgstr "Lainnya"
+
+#: horizon/browsers/base.py:88
+msgid "Navigation Item"
+msgstr "Item Navigasi"
+
+#: horizon/browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "Pilih sebuah %s untuk menelusuri."
+
+#: horizon/browsers/views.py:75 horizon/templatetags/branding.py:34
+msgid "Horizon"
+msgstr "Horizon"
+
+#: horizon/conf/default.py:44
+msgid "Password is not accepted"
+msgstr "Kata kunci ditolak"
+
+#: horizon/decorators.py:53
+msgid "Please log in to continue."
+msgstr "Harap masuk untuk melanjutkan"
+
+#: horizon/decorators.py:85
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "Anda tidak diijinkan untuk mengakses %s"
+
+#: horizon/exceptions.py:119
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "Sebuah %(resource)s dengan nama \"%(name)s\" sudah ada."
+
+#: horizon/exceptions.py:137
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+"Nilai %(resource)s is %(name)s dalam template. Ketika meluncurkan stack dari "
+"antarmuka ini, nilai harus dimulai dengan \"http: //\" atau \"https: //\""
+
+#: horizon/exceptions.py:224
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "Tidak Diijinkan: %s"
+
+#: horizon/exceptions.py:227 horizon/templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr "Tidak Diijinkan. Silahkan login kembali."
+
+#: horizon/forms/fields.py:73
+msgid "Incorrect format for IP address"
+msgstr "Format alamat IP salah."
+
+#: horizon/forms/fields.py:74
+msgid "Invalid version for IP address"
+msgstr "Versi alamat IP salah."
+
+#: horizon/forms/fields.py:75
+msgid "Invalid subnet mask"
+msgstr "Subnet mask alamat IP tidak benar."
+
+#: horizon/forms/fields.py:153
+msgid "Invalid MAC Address format"
+msgstr "Format MAC Address tidak valid"
+
+#: horizon/forms/views.py:139
+#: horizon/templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "Kirim"
+
+#: horizon/forms/views.py:140
+#: horizon/templates/horizon/common/_workflow.html:52
+#: horizon/templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "Batal"
+
+#: horizon/notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr "File json pesan '%(path)s' is malformed. %(exception)s"
+
+#: horizon/notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr "Pengolahan kesalahan file json pesan '%(path)s': %(exception)s"
+
+#: horizon/tables/actions.py:477
+#: horizon/templates/horizon/common/_data_table_table_actions.html:21
+#: horizon/templates/horizon/common/_data_table_table_actions.html:31
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:14
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:23
+msgid "Filter"
+msgstr "Penyaring"
+
+#: horizon/tables/actions.py:656
+msgid "This action cannot be undone."
+msgstr "Aksi ini tidak dapat diselesaikan"
+
+#: horizon/tables/actions.py:789
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "Anda tidak diijinkan untuk %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:796
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "Tidak dapat %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:802
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:909
+msgid "Update Item"
+msgid_plural "Update Items"
+msgstr[0] "Update Item"
+
+#: horizon/tables/actions.py:917
+msgid "Updated Item"
+msgid_plural "Updated Items"
+msgstr[0] "Updated Item"
+
+#: horizon/tables/base.py:333
+msgid "-"
+msgstr "-"
+
+#: horizon/tables/base.py:1105
+msgid "No items to display."
+msgstr "Tidak ada yang ditampilkan"
+
+#: horizon/tables/base.py:1173
+msgid "Please specify a search criteria first."
+msgstr "Silahkan tentukan kriteria pencarian pertama."
+
+#: horizon/tables/base.py:1229
+#: horizon/templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "Aksi"
+
+#: horizon/tables/base.py:1484
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "Tidak ada hasil yang terhubung dengan id \"%s\"."
+
+#: horizon/tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "Mohon pilih sebuah baris terlebih dahulu sebelum aksi."
+
+#: horizon/templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr ""
+"Jika Anda tidak yakin metode tentang otentikasi untuk digunakan, hubungi "
+"administrator Anda."
+
+#: horizon/templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr "Log in"
+
+#: horizon/templates/auth/_login_form.html:39
+msgid "You do not have permission to access the resource:"
+msgstr "Anda tidak diijinkan untuk mengakses bagian ini."
+
+#: horizon/templates/auth/_login_form.html:48
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+"Login sebagai user yang berbeda atau kembali ke  <a href=\"%(home_url)s"
+"\">home page</a>"
+
+#: horizon/templates/auth/_login_form.html:74
+msgid "Sign In"
+msgstr "Mendaftar"
+
+#: horizon/templates/auth/_login_form.html:75
+msgid "Connect"
+msgstr "Connect"
+
+#: horizon/templates/auth/login.html:4 horizon/templates/not_authorized.html:9
+msgid "Login"
+msgstr "Login"
+
+#: horizon/templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "Informasi:"
+
+#: horizon/templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "Peringatan:"
+
+#: horizon/templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "Berhasil:"
+
+#: horizon/templates/horizon/_messages.html:34
+msgid "Error: "
+msgstr "Kesalahan:"
+
+#: horizon/templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr "Anda telah memilih: [[selection]]. "
+
+#: horizon/templates/horizon/client_side/_confirm.html:13
+msgid "Please confirm your selection."
+msgstr "Harap mengkonfirmasi pilihan Anda."
+
+#: horizon/templates/horizon/client_side/_confirm.html:17
+msgid "Please input reason: "
+msgstr ""
+
+#: horizon/templates/horizon/common/_data_table.html:68
+msgid "Summary"
+msgstr "Ringkasan"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:4
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "Menampilkan %(counter)s item"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;Mundur"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:14
+msgid "Next&nbsp;&raquo;"
+msgstr "Berikut&nbsp;&raquo;"
+
+#: horizon/templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "Aksi Lebih"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr "Pilih sebuah periode waktu untuk mencari kegunaannya:"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr "Tanggal harus di format YYYY-MM-DD."
+
+#: horizon/templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr "to"
+
+#: horizon/templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr "%(context_name)s:"
+
+#: horizon/templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "Tambah baris"
+
+#: horizon/templates/horizon/common/_formset_table_row.html:15
+#, python-format
+msgid "%(name)s: %(error)s"
+msgstr "%(name)s: %(error)s"
+
+#: horizon/templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr "Keystone Providers (penyedia keystone)::"
+
+#: horizon/templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "Ringkasan Batasan"
+
+#: horizon/templates/horizon/common/_limit_summary.html:16
+#: horizon/templates/horizon/common/_limit_summary.html:20
+#: horizon/templates/horizon/common/_limit_summary.html:24
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+msgstr "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+
+#: horizon/templates/horizon/common/_limit_summary.html:29
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+msgstr "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+
+#: horizon/templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "Tampilkan %(nav_items)s items"
+
+#: horizon/templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "Menampilkan sebanyak %(content_items)s item"
+
+#: horizon/templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "Ringkasan Penggunaan"
+
+#: horizon/templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr "Instance aktif"
+
+#: horizon/templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "RAM aktif:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr "VCPU-Hours periode ini:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr "GB-Hours saat ini"
+
+#: horizon/templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr "RAM-Hours periode ini:"
+
+#: horizon/templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "Kembali"
+
+#: horizon/templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "Berikutnya"
+
+#: horizon/templates/not_authorized.html:8
+msgid "You are not authorized to access this page"
+msgstr "Kamu tidak diperbolehkan mengakses halaman ini"
+
+#: horizon/templatetags/horizon.py:161
+msgid "(No Limit)"
+msgstr "(No Limit)"
+
+#: horizon/templatetags/horizon.py:164 horizon/templatetags/horizon.py:166
+msgid "Available"
+msgstr "Tersedia"
+
+#: horizon/templatetags/sizeformat.py:51 horizon/templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] "%(size)d Byte"
+
+#: horizon/templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr "Infinity"
+
+#: horizon/templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: horizon/templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: horizon/templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: horizon/templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: horizon/templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: horizon/templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr "%s EB"
+
+#: horizon/templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr "%s ZB"
+
+#: horizon/templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr "%s YB"
+
+#: horizon/templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 Bytes"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] "Menjual Puppies"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] "Puppies terjual"
+
+#: horizon/test/unit/tables/test_tables.py:141
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] "Batch Item"
+
+#: horizon/test/unit/tables/test_tables.py:150
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] "Batched Item"
+
+#: horizon/test/unit/tables/test_tables.py:178
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] "Up Item"
+
+#: horizon/test/unit/tables/test_tables.py:185
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] "Down Item"
+
+#: horizon/test/unit/tables/test_tables.py:194
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] "Upped Item"
+
+#: horizon/test/unit/tables/test_tables.py:201
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] "Downed Item"
+
+#: horizon/test/unit/test_views.py:58
+msgid "Fake"
+msgstr "Bohongan"
+
+#: horizon/utils/filters.py:50
+msgid "Never"
+msgstr "Tidak pernah"
+
+#: horizon/utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "Nomor port yang salah"
+
+#: horizon/utils/validators.py:35
+msgid "Not a valid ICMP type"
+msgstr "Not a valid ICMP type"
+
+#: horizon/utils/validators.py:42
+msgid "Not a valid ICMP code"
+msgstr "Not a valid ICMP code"
+
+#: horizon/utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "Nomor IP yang salah"
+
+#: horizon/utils/validators.py:72
+msgid "One colon allowed in port range"
+msgstr "Diijinkan sebuah titik dua dalam jangkauan port"
+
+#: horizon/utils/validators.py:79
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr "Entri metadata tidak valid. Gunakan pasangan key=value dipisahkan koma"
+
+#: horizon/utils/validators.py:95
+msgid "The string may only contain ASCII printable characters."
+msgstr "String hanya dapat berisi ASCII karakter yang dapat dicetak."
+
+#: horizon/workflows/base.py:78 horizon/workflows/base.py:236
+msgid "Processing..."
+msgstr "Sedang di proses..."
+
+#: horizon/workflows/base.py:748
+msgid "All available"
+msgstr "Semua yang tersed1a"
+
+#: horizon/workflows/base.py:749
+msgid "Members"
+msgstr "Anggota"
+
+#: horizon/workflows/base.py:750
+msgid "None available."
+msgstr "Tidak satupun tersedia"
+
+#: horizon/workflows/base.py:751
+msgid "No members."
+msgstr "Bukan anggota."
+
+#: horizon/workflows/base.py:862
+msgid "Save"
+msgstr "Simpan"
+
+#: horizon/workflows/base.py:863
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s berhasil diselesaikan."
+
+#: horizon/workflows/base.py:864
+#, python-format
+msgid "%s did not complete."
+msgstr "%s tidak selesai."
+
+#: horizon/workflows/base.py:1117
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr ""
+"Pengguna saat ini memiliki izin yang cukup untuk menyelesaikan tugas yang "
+"diminta."

@@ -1,0 +1,18 @@
+{% extends "horizon/common/_modal_form.html" %}
+
+{% load i18n %}
+
+{% block modal-body-head-left %}
+  {% include 'horizon/common/_form_errors.html' with form=form %}
+  {% include 'admin/expertmgmt/_form_table.html' with form=form %}
+{% endblock %}
+
+{% block modal-body-right %}
+  {% if chouquyaoqiu %}
+    <div>
+      <h4 align="center">抽取要求</h4>
+      <textarea style="margin:0; padding:0; width:100%" rows=20 width="100%" readonly="readonly">{{ chouquyaoqiu }}</textarea>
+    </div>
+  {% endif %}
+{% endblock %}
+

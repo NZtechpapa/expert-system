@@ -1,0 +1,11 @@
+{% block help_message %}
+<div>
+  {% if uploaded_picture %}
+    <img src="{{ uploaded_picture }}" class="img-responsive center-block">
+  {% endif %}
+  {% if show_help_text %}
+    <p>专家基本个人信息，字段前有星号标识的为必填项</p>
+    <p>字段后有星号标识的为不可删除字段</p>
+  {% endif %}
+</div>
+{% endblock %}

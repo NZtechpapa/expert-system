@@ -1,0 +1,39 @@
+/**
+ * Styling for the splash/login page.
+ */
+
+.login {
+  margin-top: $navbar-height*2;
+  background: url(/static/dashboard/img/background.png);
+  background-size: cover;
+
+  .splash-logo {
+    margin: $padding-large-horizontal $padding-large-vertical;
+    max-width: 65%;
+  }
+
+  .bg_login {
+    background: url(/static/dashboard/img/background.png);
+    background-size: cover;
+  }
+
+  .help_text {
+    display: none;
+  }
+
+  .login-title {
+    display: inline-block;
+  }
+
+  ul.errorlist {
+    padding-left: 0;
+  }
+
+  .modal-content .panel {
+    margin-bottom: 0;
+  }
+
+  .hz-icon-required {
+    display: none;
+  }
+}

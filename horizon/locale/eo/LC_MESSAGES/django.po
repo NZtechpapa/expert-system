@@ -1,0 +1,539 @@
+# Georg Hennemann <georg.hennemann@t-systems.com>, 2017. #zanata
+# Georg Hennemann <georg.hennemann@t-systems.com>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2018-01-12 02:21+0000\n"
+"Last-Translator: Georg Hennemann <georg.hennemann@t-systems.com>\n"
+"Language-Team: Esperanto\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: horizon/base.py:511
+msgid "Other"
+msgstr "Aliaj"
+
+#: horizon/browsers/base.py:88
+msgid "Navigation Item"
+msgstr "Navigada elemento"
+
+#: horizon/browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "Elektu %s por foliumi"
+
+#: horizon/browsers/views.py:75 horizon/templatetags/branding.py:34
+msgid "Horizon"
+msgstr "Horizon"
+
+#: horizon/conf/default.py:44
+msgid "Password is not accepted"
+msgstr "Password is not accepted"
+
+#: horizon/decorators.py:53
+msgid "Please log in to continue."
+msgstr "Bonvolu ensaluti por daŭrigi."
+
+#: horizon/decorators.py:85
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "Vi ne estas rajtigita por aliri %s"
+
+#: horizon/exceptions.py:119
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "Unu %(resource)s kun la nomo  \"%(name)s\" jam eksistas."
+
+#: horizon/exceptions.py:137
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+"La valoro de %(resource)s estas %(name)s en la ŝablono. Kiam starti  stakon "
+"de ci-tiu interfaco, la valoro devas komenci  kun\"http://\" aŭ \"https://\""
+
+#: horizon/exceptions.py:224
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "Ne rajtigita: %s"
+
+#: horizon/exceptions.py:227 horizon/templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr "Ne rajtigita. Bonvolu provi ensaluti denove"
+
+#: horizon/forms/fields.py:73
+msgid "Incorrect format for IP address"
+msgstr "Maljusta formato por la IP adreso"
+
+#: horizon/forms/fields.py:74
+msgid "Invalid version for IP address"
+msgstr "Maljusta versio por IP adreso"
+
+#: horizon/forms/fields.py:75
+msgid "Invalid subnet mask"
+msgstr "Maljusta subreta masko"
+
+#: horizon/forms/fields.py:153
+msgid "Invalid MAC Address format"
+msgstr "Maljusta MAC adresa formato"
+
+#: horizon/forms/views.py:139
+#: horizon/templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "Sendu"
+
+#: horizon/forms/views.py:140
+#: horizon/templates/horizon/common/_workflow.html:52
+#: horizon/templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "Nuligi"
+
+#: horizon/notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr "Message json file '%(path)s' is malformed. %(exception)s"
+
+#: horizon/notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr "Eraro traktadi mesaĝo json dosiero '%(path)s': %(exception)s"
+
+#: horizon/tables/actions.py:477
+#: horizon/templates/horizon/common/_data_table_table_actions.html:21
+#: horizon/templates/horizon/common/_data_table_table_actions.html:31
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:14
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:23
+msgid "Filter"
+msgstr "filtrilo"
+
+#: horizon/tables/actions.py:656
+msgid "This action cannot be undone."
+msgstr "Ĉi tiu agado ne povas esti malfarita"
+
+#: horizon/tables/actions.py:789
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "Vi ne estas rajtigita fari %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:796
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "Malebla fari %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:802
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:909
+msgid "Update Item"
+msgid_plural "Update Items"
+msgstr[0] "Aktualigu elementon"
+msgstr[1] "Aktualigu elementojn"
+
+#: horizon/tables/actions.py:917
+msgid "Updated Item"
+msgid_plural "Updated Items"
+msgstr[0] "Aktualigita elemento"
+msgstr[1] "Aktualigitaj elementoj"
+
+#: horizon/tables/base.py:333
+msgid "-"
+msgstr "-"
+
+#: horizon/tables/base.py:1105
+msgid "No items to display."
+msgstr "Neniu elementoj por vidigi."
+
+#: horizon/tables/base.py:1173
+msgid "Please specify a search criteria first."
+msgstr "Bonvolu entajpu  serĉan kriterion unue."
+
+#: horizon/tables/base.py:1229
+#: horizon/templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "Agadoj"
+
+#: horizon/tables/base.py:1484
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "Nenio kongruo trovita por la identigilo  \"%s\"."
+
+#: horizon/tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "Bonvolu elekti tabelvicon antaŭ starti agado"
+
+#: horizon/templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr ""
+"Se vi ne estas certa pri la autentikada metodo, kontaktu vian  administranto"
+
+#: horizon/templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr "Ensaluto"
+
+#: horizon/templates/auth/_login_form.html:39
+msgid "You do not have permission to access the resource:"
+msgstr "Vi ne havas la rajton aliri la risurco:"
+
+#: horizon/templates/auth/_login_form.html:48
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+"Ensaluti kiel alia uzanto aŭ reiru al <a href=\"%(home_url)s\">home page</a>"
+
+#: horizon/templates/auth/_login_form.html:74
+msgid "Sign In"
+msgstr "Ensalutu"
+
+#: horizon/templates/auth/_login_form.html:75
+msgid "Connect"
+msgstr "Konektu"
+
+#: horizon/templates/auth/login.html:4 horizon/templates/not_authorized.html:9
+msgid "Login"
+msgstr "Ensalutu"
+
+#: horizon/templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "Informo:"
+
+#: horizon/templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "Averto:"
+
+#: horizon/templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "Sukceso:"
+
+#: horizon/templates/horizon/_messages.html:34
+msgid "Error: "
+msgstr "Error: "
+
+#: horizon/templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr "Vi elektis: [[selection]]."
+
+#: horizon/templates/horizon/client_side/_confirm.html:13
+msgid "Please confirm your selection."
+msgstr "Bonvolu konfirmu vian elekton"
+
+#: horizon/templates/horizon/client_side/_confirm.html:17
+msgid "Please input reason: "
+msgstr ""
+
+#: horizon/templates/horizon/common/_data_table.html:68
+msgid "Summary"
+msgstr "Rezumo"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:4
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "Vidiganta %(counter)s elemento"
+msgstr[1] "Vidiganta %(counter)s elementoj"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;antaŭa"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:14
+msgid "Next&nbsp;&raquo;"
+msgstr "Sekva&nbsp;&raquo;"
+
+#: horizon/templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "Pli da agadoj"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr "Elektu tempo periodo por demandi ĝian uzadon"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr "La dato devus esti en  YYYY-MM-DD formato."
+
+#: horizon/templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr "al"
+
+#: horizon/templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr "%(context_name)s:"
+
+#: horizon/templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "Aldoni vicon"
+
+#: horizon/templates/horizon/common/_formset_table_row.html:15
+#, python-format
+msgid "%(name)s: %(error)s"
+msgstr "%(name)s: %(error)s"
+
+#: horizon/templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr "Keystone Provizantoj:"
+
+#: horizon/templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "Limitu rezumo"
+
+#: horizon/templates/horizon/common/_limit_summary.html:16
+#: horizon/templates/horizon/common/_limit_summary.html:20
+#: horizon/templates/horizon/common/_limit_summary.html:24
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+msgstr "%(usedphrase)s <span> %(used)s </span>de<span> %(available)s </span>"
+
+#: horizon/templates/horizon/common/_limit_summary.html:29
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+msgstr "%(usedphrase)s <span> %(used)s </span>(Nenio limito)"
+
+#: horizon/templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "Vidiganta %(nav_items)s elemento"
+msgstr[1] "Vidiganta %(nav_items)s elementoj"
+
+#: horizon/templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "Vidiganta %(content_items)s elemento"
+msgstr[1] "Vidiganta %(content_items)s elementoj"
+
+#: horizon/templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "Uzada rezumo"
+
+#: horizon/templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr "Aktivaj instancoj:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "Aktiva RAM:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr " VCPU-horoj por tiu periodo:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr "GB-Horoj por tiu periodo:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr "RAM-Horoj por tiu periodo:"
+
+#: horizon/templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "Reen"
+
+#: horizon/templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "Sekva"
+
+#: horizon/templates/not_authorized.html:8
+msgid "You are not authorized to access this page"
+msgstr "Vi ne estas rajtigita por aliri tiun paĝon"
+
+#: horizon/templatetags/horizon.py:161
+msgid "(No Limit)"
+msgstr "(Neniu Limito)"
+
+#: horizon/templatetags/horizon.py:164 horizon/templatetags/horizon.py:166
+msgid "Available"
+msgstr "Havebla"
+
+#: horizon/templatetags/sizeformat.py:51 horizon/templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] "%(size)d Bajt"
+msgstr[1] "%(size)d Bajt"
+
+#: horizon/templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr "Infinito"
+
+#: horizon/templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: horizon/templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: horizon/templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: horizon/templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: horizon/templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: horizon/templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr "%s EB"
+
+#: horizon/templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr "%s ZB"
+
+#: horizon/templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr "%s YB"
+
+#: horizon/templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 Bajt"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] "Vendu hundido"
+msgstr[1] "Vendu hundidoj"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] "Vendita hundido"
+msgstr[1] "Venditaj hundidoj"
+
+#: horizon/test/unit/tables/test_tables.py:141
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] "Stapla Elemento"
+msgstr[1] "Staplaj Elementoj"
+
+#: horizon/test/unit/tables/test_tables.py:150
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] "Staplita Elemento"
+msgstr[1] "Staplitaj Elementoj"
+
+#: horizon/test/unit/tables/test_tables.py:178
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] "Supren Elemento"
+msgstr[1] "Supren Elementoj"
+
+#: horizon/test/unit/tables/test_tables.py:185
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] "Malsupren Elemento"
+msgstr[1] "Malsupren Elemento"
+
+#: horizon/test/unit/tables/test_tables.py:194
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] "Suprenigita Elemento"
+msgstr[1] "Suprenigitaj Elementoj"
+
+#: horizon/test/unit/tables/test_tables.py:201
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] "Malsuprenigita Elemento"
+msgstr[1] "Malsuprenigitaj Elementoj"
+
+#: horizon/test/unit/test_views.py:58
+msgid "Fake"
+msgstr "Falso"
+
+#: horizon/utils/filters.py:50
+msgid "Never"
+msgstr "Neniam"
+
+#: horizon/utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "Nevalida pordo numero"
+
+#: horizon/utils/validators.py:35
+msgid "Not a valid ICMP type"
+msgstr "Nevalida ICMP tipo"
+
+#: horizon/utils/validators.py:42
+msgid "Not a valid ICMP code"
+msgstr "Nevalida ICMP kodo"
+
+#: horizon/utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "Nevalida IP protokol-numero"
+
+#: horizon/utils/validators.py:72
+msgid "One colon allowed in port range"
+msgstr "Unu  dupunkto permesita en  pordo rango"
+
+#: horizon/utils/validators.py:79
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr "Nevalida metadata rikordo. Uzu kommo-disigitaj klavo=valoro paroj"
+
+#: horizon/utils/validators.py:95
+msgid "The string may only contain ASCII printable characters."
+msgstr "La bitĉeno devus enhavi nur ASCII printeblaj signoj."
+
+#: horizon/workflows/base.py:78 horizon/workflows/base.py:236
+msgid "Processing..."
+msgstr "Traktadi..."
+
+#: horizon/workflows/base.py:748
+msgid "All available"
+msgstr "Ĉiujn havebla"
+
+#: horizon/workflows/base.py:749
+msgid "Members"
+msgstr "Membroj"
+
+#: horizon/workflows/base.py:750
+msgid "None available."
+msgstr "Neniun havebla."
+
+#: horizon/workflows/base.py:751
+msgid "No members."
+msgstr "Neniuj membroj."
+
+#: horizon/workflows/base.py:862
+msgid "Save"
+msgstr "Savu"
+
+#: horizon/workflows/base.py:863
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s plenumita sukcese."
+
+#: horizon/workflows/base.py:864
+#, python-format
+msgid "%s did not complete."
+msgstr "%s malsukcesis."
+
+#: horizon/workflows/base.py:1117
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr "La nuna uzanto havas nesufican permeson por plenumi la petitan taskon."

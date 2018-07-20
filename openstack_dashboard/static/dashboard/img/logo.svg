@@ -1,0 +1,25 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="202" width="602" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(3.087029398898971,0,0,5.945019863351968,-168.15255929515425,-1075.9733141985703) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="205.755019" x="100.207084" stroke-width="0" fill="#000000">专家评审系统</text>
+  <text stroke="#000" transform="matrix(36.97189712524414,0,0,1,-18555.878307700157,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="150" x="502.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g stroke="null" id="svg_46">
+   <rect stroke="#000" rx="26" id="svg_5" height="166.974352" width="133.09048" y="12.025644" x="4.745906" stroke-opacity="null" stroke-width="0" fill="#ff0000"/>
+   <rect stroke="#000" rx="6" id="svg_7" height="37.606837" width="58.22708" y="118.829056" x="44.673047" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <rect stroke="#000" rx="6" id="svg_8" height="37.606837" width="58.22708" y="61.666664" x="44.090776" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <rect stroke="#000" rx="6" id="svg_9" height="37.606837" width="58.22708" y="2.999999" x="44.673047" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <rect stroke="#000" rx="6" id="svg_10" height="105.299145" width="21.627202" y="55.649571" x="2.500004" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <rect stroke="#000" rx="6" id="svg_11" height="105.299145" width="21.627202" y="52.641024" x="117.872805" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  </g>
+ </g>
+</svg>

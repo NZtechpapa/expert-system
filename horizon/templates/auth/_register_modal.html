@@ -1,0 +1,33 @@
+{% extends 'auth/_register_form.html' %}
+{% load i18n %}
+
+{% block pre_register %}
+  <div class="login modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        {{ block.super }}
+{% endblock %}
+
+{% block register_header %}
+  {{ block.super }}
+  <button class="close" aria-hidden="true" data-dismiss="modal" type="button">
+    <span class="fa fa-close"></span>
+  </button>
+{% endblock %}
+
+{% block register_body %}
+  {{ block.super }}
+  <input type="hidden" value="" name="is_modal">
+{% endblock %}
+
+{% block register_footer %}
+  {{ block.super }}
+  {% include '_register_form_footer.html' %}
+{% endblock %}
+
+{% block post_register %}
+        {{ block.super }}
+      </div>
+    </div>
+  </div>
+{% endblock %}

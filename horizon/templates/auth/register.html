@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}用户注册{% endblock %}
+
+{% block content %}
+  {% include 'auth/_register.html' %}
+{% endblock %}
+
+{% block footer %}
+  {% include '_register_footer.html' %}
+{% endblock %}

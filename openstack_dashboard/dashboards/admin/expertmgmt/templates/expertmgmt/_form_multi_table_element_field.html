@@ -1,0 +1,12 @@
+{% load form_helpers %}
+{% for field in fields %}
+  {% ifequal fields|length 1 %}
+    <td colspan="2">
+      {% include 'horizon/common/_form_field.html' with field=field %}
+    </td>
+  {% else %}
+    <td width=50%>
+      {% include 'horizon/common/_form_field.html' with field=field %}
+    </td>
+  {% endifequal %}
+{% endfor %}

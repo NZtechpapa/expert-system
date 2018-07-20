@@ -1,0 +1,23 @@
+{% load form_helpers %}
+<td>
+  <div class="{{ classes.value }} {{ field|wrapper_classes }}">
+    {% with add_item_link=field|add_item_url %}
+    {% if add_item_link %}
+      <div class='input-group'>
+        {{ field|add_bootstrap_class }}
+        <span class="input-group-btn">
+          <a href="{{ add_item_link }}" data-add-to-field="{{ field.auto_id }}" class='btn btn-default ajax-add ajax-modal'>
+            <span class="fa fa-plus"></span>
+          </a>
+        </span>
+      </div>
+    {% else %}
+      {% if field|is_number %}
+        {% include 'horizon/common/fields/_themable_spinner.html' %}
+      {% else %}
+        {{ field|add_bootstrap_class }}
+      {% endif %}
+    {% endif %}
+    {% endwith %}
+  </div>
+</td>

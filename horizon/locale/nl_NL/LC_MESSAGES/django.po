@@ -1,0 +1,544 @@
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Joris S'heeren <joris.sheeren@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 12.0.0.0b2.dev85\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2016-03-04 12:39+0000\n"
+"Last-Translator: Joris S'heeren <joris.sheeren@gmail.com>\n"
+"Language-Team: Dutch (Netherlands)\n"
+"Language: nl-NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: horizon/base.py:511
+msgid "Other"
+msgstr "Overig"
+
+#: horizon/browsers/base.py:88
+msgid "Navigation Item"
+msgstr "Navigatie Artikel"
+
+#: horizon/browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "Selecteer een %s om te bladeren."
+
+#: horizon/browsers/views.py:75 horizon/templatetags/branding.py:34
+msgid "Horizon"
+msgstr "Horizon"
+
+#: horizon/conf/default.py:44
+msgid "Password is not accepted"
+msgstr "Wachtwoord is niet geaccepteerd"
+
+#: horizon/decorators.py:53
+msgid "Please log in to continue."
+msgstr "Meldt u zich aan om door te gaan."
+
+#: horizon/decorators.py:85
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "U bent niet gemachtigd voor toegang tot %s"
+
+#: horizon/exceptions.py:119
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "Een %(resource)s met de naam \"%(name)s\" bestaat al."
+
+#: horizon/exceptions.py:137
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+
+#: horizon/exceptions.py:224
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "Onbevoegd: %s"
+
+#: horizon/exceptions.py:227 horizon/templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr "Onbevoegd. Meldt u zich opnieuw aan."
+
+#: horizon/forms/fields.py:73
+msgid "Incorrect format for IP address"
+msgstr "Onjuist formaat voor IP adres"
+
+#: horizon/forms/fields.py:74
+msgid "Invalid version for IP address"
+msgstr "Ongeldige versie voor IP adres"
+
+#: horizon/forms/fields.py:75
+msgid "Invalid subnet mask"
+msgstr "Ongeldig subnet masker"
+
+#: horizon/forms/fields.py:153
+msgid "Invalid MAC Address format"
+msgstr ""
+
+#: horizon/forms/views.py:139
+#: horizon/templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "Indienen"
+
+#: horizon/forms/views.py:140
+#: horizon/templates/horizon/common/_workflow.html:52
+#: horizon/templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: horizon/notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr ""
+
+#: horizon/notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr ""
+
+#: horizon/tables/actions.py:477
+#: horizon/templates/horizon/common/_data_table_table_actions.html:21
+#: horizon/templates/horizon/common/_data_table_table_actions.html:31
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:14
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:23
+msgid "Filter"
+msgstr "Filter"
+
+#: horizon/tables/actions.py:656
+msgid "This action cannot be undone."
+msgstr "Deze actie kan niet ongedaan worden gemaakt."
+
+#: horizon/tables/actions.py:789
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "Het is u niet toegestaan om %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:796
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "Niet in staat om %(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:802
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:909
+msgid "Update Item"
+msgid_plural "Update Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/tables/actions.py:917
+msgid "Updated Item"
+msgid_plural "Updated Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/tables/base.py:333
+msgid "-"
+msgstr "-"
+
+#: horizon/tables/base.py:1105
+msgid "No items to display."
+msgstr "Geen artikelen om weer te geven."
+
+#: horizon/tables/base.py:1173
+msgid "Please specify a search criteria first."
+msgstr ""
+
+#: horizon/tables/base.py:1229
+#: horizon/templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "Acties"
+
+#: horizon/tables/base.py:1484
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "Geen overeenkomsten gevonden voor de id \"%s\"."
+
+#: horizon/tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "Selecteer alstublieft een rij voor het uitvoeren van die actie."
+
+#: horizon/templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr ""
+
+#: horizon/templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr "Aanmelden"
+
+#: horizon/templates/auth/_login_form.html:39
+msgid "You do not have permission to access the resource:"
+msgstr "U ben niet gemachtigd voor toegang tot de bron:"
+
+#: horizon/templates/auth/_login_form.html:48
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+
+#: horizon/templates/auth/_login_form.html:74
+msgid "Sign In"
+msgstr "Aanmelden"
+
+#: horizon/templates/auth/_login_form.html:75
+msgid "Connect"
+msgstr "Verbinden"
+
+#: horizon/templates/auth/login.html:4 horizon/templates/not_authorized.html:9
+msgid "Login"
+msgstr "Aanmelden"
+
+#: horizon/templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "Informatie: "
+
+#: horizon/templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "Waarschuwing: "
+
+#: horizon/templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "Gelukt: "
+
+#: horizon/templates/horizon/_messages.html:34
+msgid "Error: "
+msgstr "Fout: "
+
+#: horizon/templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr ""
+
+#: horizon/templates/horizon/client_side/_confirm.html:13
+#, fuzzy
+#| msgid "Please log in to continue."
+msgid "Please confirm your selection."
+msgstr "Meldt u zich aan om door te gaan."
+
+#: horizon/templates/horizon/client_side/_confirm.html:17
+msgid "Please input reason: "
+msgstr ""
+
+#: horizon/templates/horizon/common/_data_table.html:68
+msgid "Summary"
+msgstr "Samenvatting"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:4
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;Prev"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:14
+msgid "Next&nbsp;&raquo;"
+msgstr "Volgende&nbsp;&raquo;"
+
+#: horizon/templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "Meer acties"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr ""
+
+#: horizon/templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr ""
+
+#: horizon/templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "Rij toevoegen"
+
+#: horizon/templates/horizon/common/_formset_table_row.html:15
+#, fuzzy, python-format
+#| msgid "%(action)s: %(objs)s"
+msgid "%(name)s: %(error)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "Beperk samenvatting"
+
+#: horizon/templates/horizon/common/_limit_summary.html:16
+#: horizon/templates/horizon/common/_limit_summary.html:20
+#: horizon/templates/horizon/common/_limit_summary.html:24
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+msgstr ""
+
+#: horizon/templates/horizon/common/_limit_summary.html:29
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+msgstr ""
+
+#: horizon/templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "Samenvatting van verbruik"
+
+#: horizon/templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "Actieve RAM:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "Terug"
+
+#: horizon/templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "Volgende"
+
+#: horizon/templates/not_authorized.html:8
+#, fuzzy
+#| msgid "You are not authorized to access %s"
+msgid "You are not authorized to access this page"
+msgstr "U bent niet gemachtigd voor toegang tot %s"
+
+#: horizon/templatetags/horizon.py:161
+msgid "(No Limit)"
+msgstr "(Geen limiet)"
+
+#: horizon/templatetags/horizon.py:164 horizon/templatetags/horizon.py:166
+msgid "Available"
+msgstr "Beschikbaar"
+
+#: horizon/templatetags/sizeformat.py:51 horizon/templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: horizon/templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: horizon/templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: horizon/templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: horizon/templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: horizon/templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 bytes"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:141
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:150
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:178
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:185
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:194
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:201
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/test_views.py:58
+msgid "Fake"
+msgstr ""
+
+#: horizon/utils/filters.py:50
+msgid "Never"
+msgstr "Nooit"
+
+#: horizon/utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "Geen geldig poortnummer"
+
+#: horizon/utils/validators.py:35
+#, fuzzy
+#| msgid "Not a valid IP protocol number"
+msgid "Not a valid ICMP type"
+msgstr "Geen geldig IP protocolnummer"
+
+#: horizon/utils/validators.py:42
+#, fuzzy
+#| msgid "Not a valid IP protocol number"
+msgid "Not a valid ICMP code"
+msgstr "Geen geldig IP protocolnummer"
+
+#: horizon/utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "Geen geldig IP protocolnummer"
+
+#: horizon/utils/validators.py:72
+msgid "One colon allowed in port range"
+msgstr "Een dubbele punt is toegestaan in het poortbereik"
+
+#: horizon/utils/validators.py:79
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr ""
+
+#: horizon/utils/validators.py:95
+msgid "The string may only contain ASCII printable characters."
+msgstr ""
+
+#: horizon/workflows/base.py:78 horizon/workflows/base.py:236
+msgid "Processing..."
+msgstr "Bezig met verwerken..."
+
+#: horizon/workflows/base.py:748
+msgid "All available"
+msgstr "Alle beschikbare"
+
+#: horizon/workflows/base.py:749
+msgid "Members"
+msgstr "Leden"
+
+#: horizon/workflows/base.py:750
+msgid "None available."
+msgstr "Geen beschikbaar."
+
+#: horizon/workflows/base.py:751
+msgid "No members."
+msgstr "Geen leden."
+
+#: horizon/workflows/base.py:862
+msgid "Save"
+msgstr "Opslaan"
+
+#: horizon/workflows/base.py:863
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s succesvol afgerond."
+
+#: horizon/workflows/base.py:864
+#, python-format
+msgid "%s did not complete."
+msgstr "%s was niet voltooid."
+
+#: horizon/workflows/base.py:1117
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr ""

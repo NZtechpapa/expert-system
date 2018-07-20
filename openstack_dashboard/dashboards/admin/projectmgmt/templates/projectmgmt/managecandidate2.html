@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}管理候选专家列表{% endblock %}
+
+{% block page_header %}
+  {% include "horizon/common/_page_header.html" with title=page_title %}
+{% endblock page_header %}
+
+{% block main %}
+  <div id="matchcandidate2">
+    <h2>专家列表 - 点击"高级搜索"查找专家</h2>
+    {{ matchcandidate2_table.render }}
+  </div>
+  <div id="candidatetable">
+    <h2>项目候选专家列表</h2>
+    {{ candidatetable_table.render }}
+  </div>
+{% endblock %}
+
+

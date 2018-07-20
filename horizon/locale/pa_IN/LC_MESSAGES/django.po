@@ -1,0 +1,543 @@
+# Amandeep Singh Saini <jimidar@gmail.com>, 2015. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: horizon 12.0.0.0rc2.dev47\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-26 08:19+0000\n"
+"PO-Revision-Date: 2015-10-06 02:02+0000\n"
+"Last-Translator: Amandeep Singh Saini <jimidar@gmail.com>\n"
+"Language-Team: Punjabi (India)\n"
+"Language: pa-IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: horizon/base.py:511
+msgid "Other"
+msgstr "ਹੋਰ"
+
+#: horizon/browsers/base.py:88
+msgid "Navigation Item"
+msgstr "ਨੈਵੀਗੇਸ਼ਨ ਚੀਜ਼"
+
+#: horizon/browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "ਬਰਾਊਜ਼ ਕਰਨ ਲਈ ਇੱਕ %s ਚੁਣੋ।"
+
+#: horizon/browsers/views.py:75 horizon/templatetags/branding.py:34
+msgid "Horizon"
+msgstr "Horizon"
+
+#: horizon/conf/default.py:44
+msgid "Password is not accepted"
+msgstr "ਪਛਾਣ-ਸ਼ਬਦ ਪਰਵਾਨਿਤ ਨਹੀਂ ਹੈ"
+
+#: horizon/decorators.py:53
+msgid "Please log in to continue."
+msgstr "ਜਾਰੀ ਰਹਿਣ ਲਈ ਕਿਰਪਾ ਕਰ ਕੇ ਲਾਗਇਨ ਕਰੋ।"
+
+#: horizon/decorators.py:85
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "ਤੁਸੀਂ %s ਤੇ ਦਖਲ ਦੇਣ ਲਈ ਅਧਿਕਾਰਤ ਨਹੀਂ ਹੋ"
+
+#: horizon/exceptions.py:119
+#, python-format
+msgid "A %(resource)s with the name \"%(name)s\" already exists."
+msgstr "ਇੱਕ %(resource)s ਪਹਿਲਾਂ ਹੀ \"%(name)s\" ਨਾਂ ਨਾਲ ਮੌਜੂਦ ਹੈ।"
+
+#: horizon/exceptions.py:137
+#, python-format
+msgid ""
+"The value of %(resource)s is %(name)s inside the template. When launching a "
+"stack from this interface, the value must start with \"http://\" or "
+"\"https://\""
+msgstr ""
+
+#: horizon/exceptions.py:224
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "ਅਣ-ਅਧਿਕਾਰਤ ਕੀਤਾ: %s"
+
+#: horizon/exceptions.py:227 horizon/templates/not_authorized.html:5
+msgid "Unauthorized. Please try logging in again."
+msgstr "ਅਣਅਧਿਕਾਰਤ। ਕਿਰਪਾ ਕਰ ਕੇ ਦੁਬਾਰਾ ਲਾਗਇਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+
+#: horizon/forms/fields.py:73
+msgid "Incorrect format for IP address"
+msgstr "IP ਪਤੇ ਲਈ ਗਲਤ ਬਣਤਰ"
+
+#: horizon/forms/fields.py:74
+msgid "Invalid version for IP address"
+msgstr "IP ਪਤੇ ਲਈ ਅਢੁਕਵਾਂ ਸੰਸਕਰਣ"
+
+#: horizon/forms/fields.py:75
+msgid "Invalid subnet mask"
+msgstr "ਅਢੁਕਵਾਂ ਸਬਨੈੱਟ ਮਾਸਕ"
+
+#: horizon/forms/fields.py:153
+msgid "Invalid MAC Address format"
+msgstr ""
+
+#: horizon/forms/views.py:139
+#: horizon/templates/horizon/common/_datepicker_form.html:20
+msgid "Submit"
+msgstr "ਦਾਖਲ ਕਰੋ"
+
+#: horizon/forms/views.py:140
+#: horizon/templates/horizon/common/_workflow.html:52
+#: horizon/templates/horizon/common/_workflow.html:60
+msgid "Cancel"
+msgstr "ਰੱਦ ਕਰੋ"
+
+#: horizon/notifications.py:75
+#, python-format
+msgid "Message json file '%(path)s' is malformed. %(exception)s"
+msgstr ""
+
+#: horizon/notifications.py:99
+#, python-format
+msgid "Error processing message json file '%(path)s': %(exception)s"
+msgstr ""
+
+#: horizon/tables/actions.py:477
+#: horizon/templates/horizon/common/_data_table_table_actions.html:21
+#: horizon/templates/horizon/common/_data_table_table_actions.html:31
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:14
+#: horizon/templates/horizon/common/_workflow_step_update_members.html:23
+msgid "Filter"
+msgstr "ਛਾਣਨੀ (ਫਿਲਟਰ)"
+
+#: horizon/tables/actions.py:656
+msgid "This action cannot be undone."
+msgstr "ਇਹ ਕਾਰਵਾਈ ਵਾਪਸ ਨਹੀੰ ਲਈ ਜਾ ਸਕੇਗੀ।"
+
+#: horizon/tables/actions.py:789
+#, python-format
+msgid "You are not allowed to %(action)s: %(objs)s"
+msgstr "ਤੁਹਾਨੂੰ %(action)s: ਦੀ ਮਨਜੂਰੀ ਨਹੀਂ ਹੈ: %(objs)s"
+
+#: horizon/tables/actions.py:796
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "%(action)s ਤੋਂ ਅਸਮਰੱਥ: %(objs)s"
+
+#: horizon/tables/actions.py:802
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: horizon/tables/actions.py:909
+msgid "Update Item"
+msgid_plural "Update Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/tables/actions.py:917
+msgid "Updated Item"
+msgid_plural "Updated Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/tables/base.py:333
+msgid "-"
+msgstr "-"
+
+#: horizon/tables/base.py:1105
+msgid "No items to display."
+msgstr "ਪਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ਕੋਈ ਚੀਜ਼ ਨਹੀਂ।"
+
+#: horizon/tables/base.py:1173
+msgid "Please specify a search criteria first."
+msgstr ""
+
+#: horizon/tables/base.py:1229
+#: horizon/templates/horizon/common/_data_table_table_actions.html:56
+msgid "Actions"
+msgstr "ਕਾਰਵਾਈਆਂ"
+
+#: horizon/tables/base.py:1484
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "id \"%s\" ਲਈ ਕੁੱਝ ਵੀ ਮੇਲ ਖਾਂਦਾ ਵਾਪਿਸ ਨਹੀਂ ਹੋਇਆ।"
+
+#: horizon/tables/base.py:1647
+msgid "Please select a row before taking that action."
+msgstr "ਉਹ ਕਾਰਵਾਈ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਰਪਾ ਕਰ ਕੇ ਇੱਕ ਸਤਰ੍ਹ ਚੁਣੋ।"
+
+#: horizon/templates/auth/_description.html:9
+msgid ""
+"If you are not sure which authentication method to use, contact your "
+"administrator."
+msgstr ""
+
+#: horizon/templates/auth/_login_form.html:17
+msgid "Log in"
+msgstr ""
+
+#: horizon/templates/auth/_login_form.html:39
+msgid "You do not have permission to access the resource:"
+msgstr "ਤੁਹਾਡੇ ਕੋਲ ਵਸੀਲੇ ਤੱਕ ਦਖਲ ਦੀ ਪਰਵਾਨਗੀ ਨਹੀਂ ਹੈ:"
+
+#: horizon/templates/auth/_login_form.html:48
+#, python-format
+msgid ""
+"Login as different user or go back to <a href=\"%(home_url)s\">home page</a>"
+msgstr ""
+
+#: horizon/templates/auth/_login_form.html:74
+msgid "Sign In"
+msgstr "ਸਾਈਨ ਇਨ ਕਰੋ"
+
+#: horizon/templates/auth/_login_form.html:75
+msgid "Connect"
+msgstr "ਜੁੜੋ"
+
+#: horizon/templates/auth/login.html:4 horizon/templates/not_authorized.html:9
+msgid "Login"
+msgstr "ਲਾਗਇਨ"
+
+#: horizon/templates/horizon/_messages.html:10
+msgid "Info: "
+msgstr "ਜਾਣਕਾਰੀ: "
+
+#: horizon/templates/horizon/_messages.html:18
+msgid "Warning: "
+msgstr "ਚੇਤਾਵਨੀ: "
+
+#: horizon/templates/horizon/_messages.html:26
+msgid "Success: "
+msgstr "ਸਫਲਤਾ: "
+
+#: horizon/templates/horizon/_messages.html:34
+msgid "Error: "
+msgstr "ਗਲਤੀ: "
+
+#: horizon/templates/horizon/client_side/_confirm.html:9
+msgid "You have selected: [[selection]]. "
+msgstr ""
+
+#: horizon/templates/horizon/client_side/_confirm.html:13
+#, fuzzy
+#| msgid "Please log in to continue."
+msgid "Please confirm your selection."
+msgstr "ਜਾਰੀ ਰਹਿਣ ਲਈ ਕਿਰਪਾ ਕਰ ਕੇ ਲਾਗਇਨ ਕਰੋ।"
+
+#: horizon/templates/horizon/client_side/_confirm.html:17
+msgid "Please input reason: "
+msgstr ""
+
+#: horizon/templates/horizon/common/_data_table.html:68
+msgid "Summary"
+msgstr "ਸਾਰ"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:4
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "%(counter)s ਚੀਜ ਵਿਖਾਈ ਜਾ ਰਹੀ"
+msgstr[1] "%(counter)s ਚੀਜਾਂ ਵਿਖਾਈਆਂ ਜਾ ਰਹੀਆਂ"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:11
+msgid "&laquo;&nbsp;Prev"
+msgstr "&laquo;&nbsp;Prev"
+
+#: horizon/templates/horizon/common/_data_table_pagination.html:14
+msgid "Next&nbsp;&raquo;"
+msgstr "Next&nbsp;&raquo;"
+
+#: horizon/templates/horizon/common/_data_table_table_actions.html:54
+msgid "More Actions"
+msgstr "ਹੋਰ ਕਾਰਵਾਈਆਂ"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:4
+msgid "Select a period of time to query its usage:"
+msgstr "ਇਸਦੀ ਵਰਤੋਂ ਬਾਰੇ ਪੁੱਛ-ਗਿੱਛ ਲਈ ਇੱਕ ਸਮਾਂ ਅੰਤਰਾਲ ਚੁਣੋ:"
+
+#: horizon/templates/horizon/common/_datepicker_form.html:5
+msgid "The date should be in YYYY-MM-DD format."
+msgstr ""
+
+#: horizon/templates/horizon/common/_datepicker_form.html:13
+msgid "to"
+msgstr ""
+
+#: horizon/templates/horizon/common/_domain_page_header.html:6
+#, python-format
+msgid "%(context_name)s:"
+msgstr "%(context_name)s:"
+
+#: horizon/templates/horizon/common/_formset_table.html:35
+msgid "Add a row"
+msgstr "ਇੱਕ ਸਤਰ੍ਹ ਜੋੜੋ"
+
+#: horizon/templates/horizon/common/_formset_table_row.html:15
+#, python-format
+msgid "%(name)s: %(error)s"
+msgstr "%(name)s: %(error)s"
+
+#: horizon/templates/horizon/common/_keystone_provider_selector.html:8
+msgid "Keystone Providers:"
+msgstr ""
+
+#: horizon/templates/horizon/common/_limit_summary.html:5
+msgid "Limit Summary"
+msgstr "ਹੱਦ ਸਾਰ"
+
+#: horizon/templates/horizon/common/_limit_summary.html:16
+#: horizon/templates/horizon/common/_limit_summary.html:20
+#: horizon/templates/horizon/common/_limit_summary.html:24
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>of<span> %(available)s </span>"
+msgstr ""
+
+#: horizon/templates/horizon/common/_limit_summary.html:29
+#, python-format
+msgid "%(usedphrase)s <span> %(used)s </span>(No Limit)"
+msgstr ""
+
+#: horizon/templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "%(nav_items)s ਚੀਜ਼ ਵਿਖਾ ਰਿਹਾ"
+msgstr[1] "%(nav_items)s ਚੀਜ਼ਾਂ ਵਿਖਾ ਰਿਹਾ"
+
+#: horizon/templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "%(content_items)s ਚੀਜ਼ ਵਿਖਾ ਰਿਹਾ"
+msgstr[1] "%(content_items)s ਚੀਜ਼ਾਂ ਵਿਖਾ ਰਿਹਾ"
+
+#: horizon/templates/horizon/common/_usage_summary.html:3
+msgid "Usage Summary"
+msgstr "ਵਰਤੋਂ ਸਾਰ"
+
+#: horizon/templates/horizon/common/_usage_summary.html:12
+msgid "Active Instances:"
+msgstr "ਕਿਰਿਆਸ਼ੀਲ ਇੰਸਟਾਸਜ਼:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:14
+msgid "Active RAM:"
+msgstr "ਕਿਰਿਆਸ਼ੀਲ RAM:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours:"
+msgstr "ਇਸ ਅੰਤਰਾਲ ਦੇ VCPU-ਘੰਟੇ:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:18
+msgid "This Period's GB-Hours:"
+msgstr "ਇਸ ਅੰਤਰਾਲ ਦੇ GB-ਘੰਟੇ:"
+
+#: horizon/templates/horizon/common/_usage_summary.html:20
+msgid "This Period's RAM-Hours:"
+msgstr "ਇਸ ਅੰਤਰਾਲ ਦੇ RAM-ਘੰਟੇ:"
+
+#: horizon/templates/horizon/common/_workflow.html:54
+msgid "Back"
+msgstr "ਪਿੱਛੇ"
+
+#: horizon/templates/horizon/common/_workflow.html:55
+msgid "Next"
+msgstr "ਅਗਲਾ"
+
+#: horizon/templates/not_authorized.html:8
+#, fuzzy
+#| msgid "You are not authorized to access %s"
+msgid "You are not authorized to access this page"
+msgstr "ਤੁਸੀਂ %s ਤੇ ਦਖਲ ਦੇਣ ਲਈ ਅਧਿਕਾਰਤ ਨਹੀਂ ਹੋ"
+
+#: horizon/templatetags/horizon.py:161
+msgid "(No Limit)"
+msgstr "(ਕੋਈ ਹੱਦ ਨਹੀਂ)"
+
+#: horizon/templatetags/horizon.py:164 horizon/templatetags/horizon.py:166
+msgid "Available"
+msgstr "ਉਪਲੱਬਧ"
+
+#: horizon/templatetags/sizeformat.py:51 horizon/templatetags/sizeformat.py:58
+#, python-format
+msgid "%(size)d Byte"
+msgid_plural "%(size)d Bytes"
+msgstr[0] "%(size)d ਬਾਈਟ"
+msgstr[1] "%(size)d ਬਾਈਟਾਂ"
+
+#: horizon/templatetags/sizeformat.py:55
+msgid "Infinity"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:61
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: horizon/templatetags/sizeformat.py:63
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: horizon/templatetags/sizeformat.py:65
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: horizon/templatetags/sizeformat.py:67
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: horizon/templatetags/sizeformat.py:69
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: horizon/templatetags/sizeformat.py:71
+#, python-format
+msgid "%s EB"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:73
+#, python-format
+msgid "%s ZB"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:74
+#, python-format
+msgid "%s YB"
+msgstr ""
+
+#: horizon/templatetags/sizeformat.py:82
+msgid "0 Bytes"
+msgstr "0 ਬਾਈਟਾਂ"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:31
+msgid "Sell Puppy"
+msgid_plural "Sell Puppies"
+msgstr[0] "ਪਪੀ ਵੇਚੋ"
+msgstr[1] "ਪਪੀ ਵੇਚੋ"
+
+#: horizon/test/test_dashboards/dogs/puppies/tables.py:40
+msgid "Sold Puppy"
+msgid_plural "Sold Puppies"
+msgstr[0] "ਵਿਕਿਆ ਹੋਇਆ ਪਪੀ"
+msgstr[1] "ਵਿਕੇ ਹੋਏ ਪਪੀ"
+
+#: horizon/test/unit/tables/test_tables.py:141
+msgid "Batch Item"
+msgid_plural "Batch Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:150
+msgid "Batched Item"
+msgid_plural "Batched Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:178
+msgid "Up Item"
+msgid_plural "Up Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:185
+msgid "Down Item"
+msgid_plural "Down Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:194
+msgid "Upped Item"
+msgid_plural "Upped Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/tables/test_tables.py:201
+msgid "Downed Item"
+msgid_plural "Downed Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: horizon/test/unit/test_views.py:58
+msgid "Fake"
+msgstr "ਨਕਲੀ"
+
+#: horizon/utils/filters.py:50
+msgid "Never"
+msgstr "ਕਦੇ ਨਹੀਂ"
+
+#: horizon/utils/validators.py:28
+msgid "Not a valid port number"
+msgstr "ਇੱਕ ਢੁਕਵਾਂ ਪੋਰਟ ਨੰਬਰ ਨਹੀਂ"
+
+#: horizon/utils/validators.py:35
+#, fuzzy
+#| msgid "Not a valid IP protocol number"
+msgid "Not a valid ICMP type"
+msgstr "ਇੱਕ ਢੁਕਵਾਂ IP ਜਾਬਤਾ ਅੰਕ ਨਹੀਂ"
+
+#: horizon/utils/validators.py:42
+#, fuzzy
+#| msgid "Not a valid IP protocol number"
+msgid "Not a valid ICMP code"
+msgstr "ਇੱਕ ਢੁਕਵਾਂ IP ਜਾਬਤਾ ਅੰਕ ਨਹੀਂ"
+
+#: horizon/utils/validators.py:47
+msgid "Not a valid IP protocol number"
+msgstr "ਇੱਕ ਢੁਕਵਾਂ IP ਜਾਬਤਾ ਅੰਕ ਨਹੀਂ"
+
+#: horizon/utils/validators.py:72
+msgid "One colon allowed in port range"
+msgstr "ਪੋਰਟ ਹੱਦ ਵਿੱਚ ਇੱਕ ਕੌਲਨ ਦੀ ਪਰਵਾਨਗੀ ਹੈ"
+
+#: horizon/utils/validators.py:79
+msgid "Invalid metadata entry. Use comma-separated key=value pairs"
+msgstr "ਗਲਤ ਮੈਟਾਡੇਟਾ ਇੰਦਰਾਜ। ਕੌਮਿਆਂ ਨਾਲ ਵੱਖ ਕੀਤੇ ਹੋਏ key=value ਜੋੜੇ ਹੀ ਵਰਤੋ"
+
+#: horizon/utils/validators.py:95
+msgid "The string may only contain ASCII printable characters."
+msgstr "ਇਸ ਸਤਰ੍ਹ ਵਿੱਚ ਸਿਰਫ਼ ਛਾਪੇ ਜਾ ਸਕਣ ਵਾਲੇ ASCII ਅੱਖਰ ਹੀ ਸ਼ਾਮਲ ਹੋ ਸਕਦੇ ਹਨ।"
+
+#: horizon/workflows/base.py:78 horizon/workflows/base.py:236
+msgid "Processing..."
+msgstr "...ਕਾਰਵਾਈ ਚੱਲ ਰਹੀ ਹੈ"
+
+#: horizon/workflows/base.py:748
+msgid "All available"
+msgstr "ਸਾਰੇ ਉਪਲੱਬਧ"
+
+#: horizon/workflows/base.py:749
+msgid "Members"
+msgstr "ਜੀਅ"
+
+#: horizon/workflows/base.py:750
+msgid "None available."
+msgstr "ਕੋਈ ਉਪਲੱਬਧ ਨਹੀਂ"
+
+#: horizon/workflows/base.py:751
+msgid "No members."
+msgstr "ਕੋਈ ਜੀਅ ਨਹੀਂ।"
+
+#: horizon/workflows/base.py:862
+msgid "Save"
+msgstr "ਸੰਭਾਲੋ"
+
+#: horizon/workflows/base.py:863
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s ਸਫਲਤਾ ਪੂਰਵਕ ਪੂਰਾ ਹੋਇਆ।"
+
+#: horizon/workflows/base.py:864
+#, python-format
+msgid "%s did not complete."
+msgstr "%s ਪੂਰਾ ਨਹੀੰ ਹੋਇਆ।"
+
+#: horizon/workflows/base.py:1117
+msgid ""
+"The current user has insufficient permission to complete the requested task."
+msgstr ""
