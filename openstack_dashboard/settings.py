@@ -253,7 +253,7 @@ DATABASES = {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'lanzhou',
+        'NAME': 'lanzhou1',
         'USER': 'lanzhou',
         'PASSWORD': 'Lanzhou64',
         'HOST': 'rm-hp36yw1wg0sx8lrp5.mysql.huhehaote.rds.aliyuncs.com',
