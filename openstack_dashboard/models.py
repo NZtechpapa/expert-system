@@ -562,15 +562,27 @@ class ExpertClass(models.Model):
     expert = models.ForeignKey(Expert, on_delete=models.CASCADE)
     zhuanjialeixing = models.CharField(max_length=32, choices=ZHUANJIALEIXING_CHOICES, verbose_name=u"*专家类型（多选）", help_text=u"专家类型（多选）", null=True, blank=True)
 
+DOMAIN = (
+    (u"国家科技部领域",(
+        (u"数学", u"数学"),
+        (u"信息科学与系统科学", u"信息科学与系统科学"),
+        (u"物理学", u"物理学"),
+        )
+     ),
+    (u"国家基金委领域", (
+        (u"数理科学", u"数理科学"),
+        (u"化学科学", u"化学科学"),
+        (u"生命科学", u"生命科学"),
+     )
+)
 
 #研究领域 -- Step 10
 class ExpertDomain(models.Model):
     domainserial = models.IntegerField(verbose_name=u"*序号", help_text=u"序号", blank=True)
-    domainname = models.CharField(max_length=32, verbose_name=u"*学科名称", help_text=u"在该研究领域研究的学科名称", blank=True)
+    domaintype = models.CharField(max_length=32, choices=DOMAIN, verbose_name=u"*领域分类", help_text=u"研究领域所属分类",blank=True)
+    domainname = models.CharField(max_length=32, choices=domaintype.get_domaintype_display(), verbose_name=u"*学科名称", help_text=u"在该研究领域研究的学科名称", blank=True)
     domainkeywords = models.CharField(max_length=256, verbose_name=u"*中文关键字", help_text=u"中文关键字，若有多个请用空格分开", blank=True)
-    domaintype = models.CharField(max_length=32, choices=DOMAIN_TYPE, verbose_name=u"*领域分类", help_text=u"研究领域所属分类", blank=True)
     expert = models.ForeignKey(Expert, on_delete=models.CASCADE)
-
 
 #工作履历 -- Step 11
 class FormalJob(models.Model):
