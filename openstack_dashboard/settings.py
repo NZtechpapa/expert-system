@@ -191,6 +191,7 @@ INSTALLED_APPS = [
     'compressor',
     'horizon',
     'openstack_auth',
+    'smart_selects',
 ]
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
