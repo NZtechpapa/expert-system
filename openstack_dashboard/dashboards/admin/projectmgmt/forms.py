@@ -73,7 +73,7 @@ class SetRuleForm(forms.ModelForm):
     id = forms.CharField(widget=forms.HiddenInput())
     # hangyefenlei = forms.CharField(max_length=255,
     #     label=u"行业分类", required=False)
-    hangyefenlei = forms.ChoiceField(max_length=32, choices=SECOND_TAGS, label=u"行业分类", required=False)
+    hangyefenlei = forms.ChoiceField(choices=SECOND_TAGS, label=u"行业分类", required=False)
     age_min = forms.IntegerField(
         min_value=1, initial=25, max_value=150, label=u"年龄下限",
         help_text=u"请输入欲抽取评审专家的年龄下限（即年龄大于或等于该值）", required=False)
