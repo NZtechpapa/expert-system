@@ -59,10 +59,21 @@ class SearchForm(expertmgmt_forms.SearchForm):
         self.fields['field1'].choices = [ (f, project_db_handle.SEARCHFIELDS_VALUE[f]) for f in param['field1_choices'] ]
         self.fields['field2'].choices = [ (f, project_db_handle.SEARCHFIELDS_VALUE[f]) for f in param['field2_choices'] ]
 
+DOMAIN = {
+     u"国家科技部领域": [u"数学", u"信息科学与系统科学", u"物理学"],
+     u"国家基金委领域": [u"数理科学", u"化学科学", u"生命科学",],
+ }
+
+FIRST_TAGS = [(k, k) for k in DOMAIN]
+SECOND_TAGS = [(k, [
+      [v, v] for v in val
+     ]) for k, val in DOMAIN.items()]
+
 class SetRuleForm(forms.ModelForm):
     id = forms.CharField(widget=forms.HiddenInput())
-    hangyefenlei = forms.CharField(max_length=255,
-        label=u"行业分类", required=False)
+    # hangyefenlei = forms.CharField(max_length=255,
+    #     label=u"行业分类", required=False)
+    hangyefenlei = forms.CharField(max_length=32, choices=SECOND_TAGS, label=u"行业分类", required=False)
     age_min = forms.IntegerField(
         min_value=1, initial=25, max_value=150, label=u"年龄下限",
         help_text=u"请输入欲抽取评审专家的年龄下限（即年龄大于或等于该值）", required=False)
