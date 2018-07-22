@@ -388,14 +388,14 @@ class FillExpertDomainInfoAction(workflows.ModelAction):
                                                          **kwargs)
         readonlyInput = forms.TextInput(attrs={'readonly': 'readonly'})
         self._initial_serial_field('domainserial')
-        _src = 'domaintype'
-        for i in range(1, 1 + self.maxslices):
-            _dst = '%s%d' % (_src, i)
-            dst = self.fields[_dst]
-            if not dst.initial:
-                _i = i if i < len(dst.choices) else (len(dst.choices) - 1)
-                (initial, _value) = dst.choices[_i]
-                dst.initial = initial
+        # _src = 'domaintype'
+        # for i in range(1, 1 + self.maxslices):
+        #     _dst = '%s%d' % (_src, i)
+        #     dst = self.fields[_dst]
+        #     if not dst.initial:
+        #         _i = i if i < len(dst.choices) else (len(dst.choices) - 1)
+        #         (initial, _value) = dst.choices[_i]
+        #         dst.initial = initial
 
     class Meta(object):
         name = u"研究领域"
