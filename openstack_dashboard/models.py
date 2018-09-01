@@ -563,6 +563,7 @@ class ExpertClass(models.Model):
     expert = models.ForeignKey(Expert, on_delete=models.CASCADE)
     zhuanjialeixing = models.CharField(max_length=32, choices=ZHUANJIALEIXING_CHOICES, verbose_name=u"*专家类型（多选）", help_text=u"专家类型（多选）", null=True, blank=True)
 
+<<<<<<< HEAD
 # DOMAIN = (
 #     (u"国家科技部领域",(
 #         (u"数学", u"数学"),
@@ -608,20 +609,15 @@ SECOND_TAGS = [(k, [
 #
 #     def __str__(self):
 #         return self.name
+=======
+>>>>>>> dev
 
+#研究领域 -- Step 10
 class ExpertDomain(models.Model):
     domainserial = models.IntegerField(verbose_name=u"*序号", help_text=u"序号", blank=True)
-    domaintype = models.CharField(max_length=32, choices=FIRST_TAGS, verbose_name=u"*领域分类", help_text=u"研究领域所属分类",blank=True)
-    domainname = models.CharField(max_length=32, choices=SECOND_TAGS, verbose_name=u"*学科名称", help_text=u"在该研究领域研究的学科名称", blank=True)
-    # domaintype = models.ForeignKey(DomainType, verbose_name=u"*领域分类", help_text=u"研究领域所属分类",blank=True, on_delete=models.CASCADE)
-    # domainname = ChainedForeignKey(
-    #     Subject,
-    #     chained_field="domaintype",
-    #     chained_model_field="domaintype",
-    #     show_all=False,
-    #     auto_choose=True
-    # )
+    domainname = models.CharField(max_length=32, verbose_name=u"*学科名称", help_text=u"在该研究领域研究的学科名称", blank=True)
     domainkeywords = models.CharField(max_length=256, verbose_name=u"*中文关键字", help_text=u"中文关键字，若有多个请用空格分开", blank=True)
+    domaintype = models.CharField(max_length=32, choices=DOMAIN_TYPE, verbose_name=u"*领域分类", help_text=u"研究领域所属分类", blank=True)
     expert = models.ForeignKey(Expert, on_delete=models.CASCADE)
 
 #工作履历 -- Step 11
