@@ -563,7 +563,6 @@ class ExpertClass(models.Model):
     expert = models.ForeignKey(Expert, on_delete=models.CASCADE)
     zhuanjialeixing = models.CharField(max_length=32, choices=ZHUANJIALEIXING_CHOICES, verbose_name=u"*专家类型（多选）", help_text=u"专家类型（多选）", null=True, blank=True)
 
-<<<<<<< HEAD
 # DOMAIN = (
 #     (u"国家科技部领域",(
 #         (u"数学", u"数学"),
@@ -591,33 +590,12 @@ FIRST_TAGS = [(k, k) for k in DOMAIN]
 SECOND_TAGS = [(k, [
       [v, v] for v in val
      ]) for k, val in DOMAIN.items()]
-    #
-    # first_class = models.CharField(
-    #     max_length=20, choices=FIRST_TAGS, default='unknown')
-    # second_class = models.CharField(
-    #     max_length=20, choices=SECOND_TAGS, default='unknown')
-#研究领域 -- Step 10
-# class DomainType(models.Model):
-#     name = models.CharField(max_length=32)
-#
-#     def __str__(self):
-#         return self.name
-#
-# class Subject(models.Model):
-#     domainType = models.ForeignKey(DomainType,on_delete=models.CASCADE)
-#     name = models.CharField(max_length=32)
-#
-#     def __str__(self):
-#         return self.name
-=======
->>>>>>> dev
 
-#研究领域 -- Step 10
 class ExpertDomain(models.Model):
     domainserial = models.IntegerField(verbose_name=u"*序号", help_text=u"序号", blank=True)
-    domainname = models.CharField(max_length=32, verbose_name=u"*学科名称", help_text=u"在该研究领域研究的学科名称", blank=True)
+    domaintype = models.CharField(max_length=32, choices=FIRST_TAGS, verbose_name=u"*领域分类", help_text=u"研究领域所属分类",blank=True)
+    domainname = models.CharField(max_length=32, choices=SECOND_TAGS, verbose_name=u"*学科名称", help_text=u"在该研究领域研究的学科名称", blank=True)
     domainkeywords = models.CharField(max_length=256, verbose_name=u"*中文关键字", help_text=u"中文关键字，若有多个请用空格分开", blank=True)
-    domaintype = models.CharField(max_length=32, choices=DOMAIN_TYPE, verbose_name=u"*领域分类", help_text=u"研究领域所属分类", blank=True)
     expert = models.ForeignKey(Expert, on_delete=models.CASCADE)
 
 #工作履历 -- Step 11
@@ -750,4 +728,5 @@ class BindRecord(models.Model):
     binded_at = models.DateTimeField(null=True)
     rebinded_at = models.DateTimeField(null=True)
     finished_at = models.DateTimeField(null=True)
+
 

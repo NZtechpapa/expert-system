@@ -20,7 +20,7 @@ import horizon
 
 
 class Project(horizon.Dashboard):
-    name = u"项目评审"
+    name = u"项目管理"
     slug = "project"
     policy_rules = (("expertreview", "expertreview:panel:projectreview"),)
 

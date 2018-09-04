@@ -385,3 +385,4 @@ class ViewReviewResultForm(forms.ModelForm):
     def handle(self, request, data):
         return True
 
+

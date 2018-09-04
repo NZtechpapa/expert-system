@@ -51,7 +51,7 @@ class FillReviewInfoAction(workflows.ModelAction):
                 self.initial[item] = today
 
     class Meta(object):
-        name = u"项目评审信息"
+        name = u"项目详细信息"
         model = models.Project
         fields = list(PROJECTREVIEWINFODIELDS)
 
@@ -141,7 +141,7 @@ class DetailBasicInfo(workflows.Step):
 # Step 2
 class DetailReviewInfoAction(workflows.ReadOnlyModelAction):
     class Meta(object):
-        name = u"项目评审信息"
+        name = u"项目详细信息"
         model = models.Project
         fields = list(PROJECTREVIEWINFODIELDS)
 
