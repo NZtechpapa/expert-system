@@ -60,14 +60,14 @@ def send_sms(mobile, message):
             messages[i] = " "
     params = "{\"expertname\":\""+messages[0]+"\",\"projectname\":\""+messages[1]+"\",\"pingshengshijian\":\""+messages[2]+"\",\"pingshengdidian\":\""+messages[3]+"\",\"fuzeren\":\""+messages[4]+"\",\"fuzeren_dianhua\":\""+messages[5]+"\"}"
     # params = u'{"name":"wqb","code":"12345678","address":"bz","phone":"13000000000"}'
-    LOG.error(send_sms(__business_id, mobile, "兰州市科学技术局", "SMS_145599426", params))
+    LOG.error(send_sms_outside(__business_id, mobile, "兰州市科学技术局", "SMS_145599426", params))
 
     pass
 
 
 
 
-def send_sms(business_id, phone_numbers, sign_name, template_code, template_param=None):
+def send_sms_outside(business_id, phone_numbers, sign_name, template_code, template_param=None):
     smsRequest = SendSmsRequest.SendSmsRequest()
     # 申请的短信模板编码,必填
     smsRequest.set_TemplateCode(template_code)
