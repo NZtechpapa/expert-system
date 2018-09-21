@@ -642,8 +642,8 @@ def generate_notify_info(expertinfo, project_info={}):
 def notify_expert(expert, mseeage_template, project_info={}):
     info = generate_notify_info(expert, project_info=project_info)
     message = mseeage_template % info
-    if expert['email']:
-        sendmessages.send_mail(expert['email'], message)
+    #if expert['email']:
+    #    sendmessages.send_mail(expert['email'], message)
     if expert['mobile']:
         sendmessages.send_sms(expert['mobile'], message)
     return True
