@@ -46,27 +46,6 @@ TEMPLATE_VERIFY_PHONE = u"""
 # 通知参与评审邮件模板，短信模板
 TEMPLATE_NOTIFY_REVIEW_PROJECT = u"""%(expertname)s|%(projectname)s|%(pingshengshijian)s|%(pingshengdidian)s|%(fuzeren)s|%(fuzeren_dianhua)s"""
 
-def send_mail(email, message):
-    LOG.error(u"Send mail to %s with message %s" % (email, message))
-    pass
-
-def send_sms(mobile, message):
-    LOG.error(u"Send sms to %s with message %s" % (mobile, message))
-    __business_id = uuid.uuid1()
-    # print(__business_id)
-    messages = message.split("|")
-    for i in range(0, len(messages)):
-        if messages[i] == "":
-            messages[i] = " "
-    params = "{\"expertname\":\""+messages[0]+"\",\"projectname\":\""+messages[1]+"\",\"pingshengshijian\":\""+messages[2]+"\",\"pingshengdidian\":\""+messages[3]+"\",\"fuzeren\":\""+messages[4]+"\",\"fuzeren_dianhua\":\""+messages[5]+"\"}"
-    # params = u'{"name":"wqb","code":"12345678","address":"bz","phone":"13000000000"}'
-    LOG.error(send_sms_outside(__business_id, mobile, "兰州市科学技术局", "SMS_145599426", params))
-
-    pass
-
-
-
-
 def send_sms_outside(business_id, phone_numbers, sign_name, template_code, template_param=None):
     smsRequest = SendSmsRequest.SendSmsRequest()
     # 申请的短信模板编码,必填
@@ -97,6 +76,24 @@ def send_sms_outside(business_id, phone_numbers, sign_name, template_code, templ
     # TODO 业务处理
 
     return smsResponse
+
+def send_mail(email, message):
+    LOG.error(u"Send mail to %s with message %s" % (email, message))
+    pass
+
+def send_sms(mobile, message):
+    LOG.error(u"Send sms to %s with message %s" % (mobile, message))
+    __business_id = uuid.uuid1()
+    # print(__business_id)
+    messages = message.split("|")
+    for i in range(0, len(messages)):
+        if messages[i] == "":
+            messages[i] = " "
+    params = "{\"expertname\":\""+messages[0]+"\",\"projectname\":\""+messages[1]+"\",\"pingshengshijian\":\""+messages[2]+"\",\"pingshengdidian\":\""+messages[3]+"\",\"fuzeren\":\""+messages[4]+"\",\"fuzeren_dianhua\":\""+messages[5]+"\"}"
+    # params = u'{"name":"wqb","code":"12345678","address":"bz","phone":"13000000000"}'
+    LOG.error(send_sms_outside(__business_id, mobile, "兰州市科学技术局", "SMS_145599426", params))
+
+    pass
 
 
 
