@@ -86,9 +86,9 @@ def send_sms(mobile, message):
     __business_id = uuid.uuid1()
     # print(__business_id)
     messages = message.split("|")
-    for i in range(0, len(messages)):
-        if messages[i] == "":
-            messages[i] = " "
+    #for i in range(0, len(messages)):
+    #    if messages[i] == "":
+    #        messages[i] = " "
     params = "{\"expertname\":\""+messages[0]+"\",\"projectname\":\""+messages[1]+"\",\"pingshengshijian\":\""+messages[2]+"\",\"pingshengdidian\":\""+messages[3]+"\",\"fuzeren\":\""+messages[4]+"\",\"fuzeren_dianhua\":\""+messages[5]+"\"}"
     # params = u'{"name":"wqb","code":"12345678","address":"bz","phone":"13000000000"}'
     LOG.error(send_sms_outside(__business_id, mobile, "兰州市科学技术局", "SMS_145599426", params))
