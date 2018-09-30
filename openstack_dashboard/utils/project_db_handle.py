@@ -663,6 +663,7 @@ def test_import_data():
         p = {'projectname': "project%02d" % i,
              'fuzeren': "负责人%02d" % i,
              'shenbaodanwei': "单位%d" % (i%5),
+             'hezuodanwei': "单位%d" % (i%5),
              'shenbaoriqi': "20%02d-%02d-%02d" % (i%15, i%12+1, i%28+1),
              'pingshengshijian': "20%02d-%02d-%02d" % (i%15+1, i%11+2, i%18+11),
              'leibie': "项目类别%02d" % i,

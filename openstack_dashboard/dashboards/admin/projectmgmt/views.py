@@ -258,6 +258,7 @@ class ManageCandidate2View(tables.MultiTableView, ManageCandidateBase):
         projectid = self.kwargs['projectid']
         project = project_db_handle.GetProjectInstanceById(projectid)
         excluders = [{'var': 'suozaidaiwei', 'operator': 'exact', 'words': project.shenbaodanwei}]
+        excluders = excluders + [{'var': 'hezuodaiwei', 'operator': 'exact', 'words': project.hezuodanwei}]
         filters = []
         _filters = {'state': 'approved'}
         expert_db_handle.dict2filter(filters, _filters)

@@ -90,6 +90,9 @@ class SetRuleForm(forms.ModelForm):
     exclude_same_org = forms.BooleanField(
         label=u"排除项目申报单位的专家", initial=True, required=True,
         help_text=u"为避免出现不公正评审，默认不抽取项目申报单位的专家",)
+    exclude_hezuodanwei = forms.BooleanField(
+        label=u"排除项目合作单位的专家", initial=True, required=True,
+        help_text=u"为避免出现不公正评审，默认不抽取项目合作单位的专家",)
 
     field_order = ['id', 'hangyefenlei', 'zuigaoxueli', 'zuigaoxuewei']
     noborder = True
@@ -223,6 +226,7 @@ class SetRuleForm(forms.ModelForm):
         exclude_danwei = data['huibidanwei']
         exclude_renyuan = data['huibirenyuan']
         exclude_same_org = data['exclude_same_org']
+        exclude_hezuodanwei = data['exclude_hezuodanwei']
         zuigaoxueli = data['zuigaoxueli']
         zuigaoxuewei = data['zuigaoxuewei']
 
@@ -232,9 +236,13 @@ class SetRuleForm(forms.ModelForm):
         excluders = []
         if exclude_same_org:
             excluders.append({'var': 'suozaidaiwei', 'operator': 'exact', 'words': project.shenbaodanwei})
+        if exclude_hezuodanwei:
+            excluders.append({'var': 'hezuodanwei', 'operator': 'exact', 'words': project.hezuodanwei})
         if exclude_danwei:
             if not (exclude_same_org and project.shenbaodanwei == exclude_danwei):
                 excluders.append({'var': 'suozaidaiwei', 'operator': 'exact', 'words': exclude_danwei})
+            if not (exclude_hezuodanwei and project.hezuodanwei == exclude_danwei):
+                excluders.append({'var': 'hezuodanwei', 'operator': 'exact', 'words': exclude_danwei})
         if exclude_renyuan:
             excluders.append({'var': 'expertname', 'operator': 'exact', 'words': exclude_renyuan})
 

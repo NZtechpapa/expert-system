@@ -657,6 +657,7 @@ class Project(models.Model):
     projectname = models.CharField(max_length=256, verbose_name=u"项目名称", help_text=u"项目名称")
     serial_no = models.CharField(max_length=64, verbose_name=u"项目编号", help_text=u"项目编号")
     shenbaodanwei = models.CharField(max_length=256, verbose_name=u"项目申报单位", help_text=u"项目申报单位")
+    hezuodanwei = models.CharField(max_length=256, verbose_name=u"项目合作单位", help_text=u"项目合作单位")
     shenbaoriqi = models.DateField(verbose_name=u"项目申报日期", help_text=u"项目申报日期，精确到日。日期格式：YYYY-MM-DD；例如：1998-01-31", null=True, blank=True)
     leibie = models.CharField(max_length=64, verbose_name=u"项目类别", help_text=u"项目类别", null=True, blank=True)
     fuzeren = models.CharField(max_length=64, verbose_name=u"项目负责人", help_text=u"项目负责人", null=True, blank=True)

@@ -638,6 +638,7 @@ class ProjectsTable(BaseTable):
     chouqurenshu = tables.Column("chouqurenshu", verbose_name=u"抽取人数")
     candidates_num = tables.Column(get_candidates, verbose_name=u"候选专家数量", hidden=True)
     reviewers_num = tables.Column(get_reviewers, verbose_name=u"已抽取人数", hidden=False)
+    hezuodanwei = tables.Column('hezuodanwei', verbose_name=u"合作单位", hidden=True)
     state = tables.Column(translate_state, verbose_name=u"项目状态")
     updated_at = tables.Column(calculate_time_since,
                                verbose_name=u"距上次更新",

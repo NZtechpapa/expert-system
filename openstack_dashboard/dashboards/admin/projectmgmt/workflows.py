@@ -23,7 +23,7 @@ _PROJECTBASICINFOFIELDS = ('projectname', 'leibie', 'fuzeren', 'fuzeren_dianhua'
 PROJECTBASICINFOFIELDS = ('id', ) + _PROJECTBASICINFOFIELDS
 
 # Step 2
-PROJECTREVIEWINFODIELDS = ('shenbaodanwei', 'shenbaoriqi', 'pingshengshijian', 'pingshengdidian', 
+PROJECTREVIEWINFODIELDS = ('shenbaodanwei','hezuodanwei', 'shenbaoriqi', 'pingshengshijian', 'pingshengdidian',
                            'chouqurenshu', 'chouquyaoqiu',)
 
 # Step 1
