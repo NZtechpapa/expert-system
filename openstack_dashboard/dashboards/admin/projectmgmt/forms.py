@@ -237,12 +237,10 @@ class SetRuleForm(forms.ModelForm):
         if exclude_same_org:
             excluders.append({'var': 'suozaidaiwei', 'operator': 'exact', 'words': project.shenbaodanwei})
         if exclude_hezuodanwei:
-            excluders.append({'var': 'hezuodanwei', 'operator': 'exact', 'words': project.hezuodanwei})
+            excluders.append({'var': 'suozaidaiwei', 'operator': 'exact', 'words': project.hezuodanwei})
         if exclude_danwei:
-            if not (exclude_same_org and project.shenbaodanwei == exclude_danwei):
+            if (exclude_same_org and project.shenbaodanwei != exclude_danwei) or (exclude_hezuodanwei and project.hezuodanwei != exclude_danwei):
                 excluders.append({'var': 'suozaidaiwei', 'operator': 'exact', 'words': exclude_danwei})
-            if not (exclude_hezuodanwei and project.hezuodanwei == exclude_danwei):
-                excluders.append({'var': 'hezuodanwei', 'operator': 'exact', 'words': exclude_danwei})
         if exclude_renyuan:
             excluders.append({'var': 'expertname', 'operator': 'exact', 'words': exclude_renyuan})
 
