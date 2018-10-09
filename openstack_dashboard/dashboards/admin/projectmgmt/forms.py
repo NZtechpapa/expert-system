@@ -88,10 +88,10 @@ class SetRuleForm(forms.ModelForm):
         min_value=1, label=u"评审专家数量",
         help_text=u"请输入欲抽取评审专家的数量", required=True)
     exclude_same_org = forms.BooleanField(
-        label=u"排除项目申报单位的专家", initial=True,
+        label=u"排除项目申报单位的专家", initial=True,required=False,
         help_text=u"为避免出现不公正评审，默认不抽取项目申报单位的专家",)
     exclude_hezuodanwei = forms.BooleanField(
-        label=u"排除项目合作单位的专家", initial=True,
+        label=u"排除项目合作单位的专家", initial=True,required=False,
         help_text=u"为避免出现不公正评审，默认不抽取项目合作单位的专家",)
 
     field_order = ['id', 'hangyefenlei', 'zuigaoxueli', 'zuigaoxuewei']
