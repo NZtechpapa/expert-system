@@ -45,6 +45,10 @@ from openstack_dashboard.utils import expert_db_handle
 from openstack_dashboard.utils import project_db_handle
 
 LOG = logging.getLogger(__name__)
+# 专家信息保存文档
+import sys
+from docx import Document
+from docx.shared import Inches
 
 def check_project_state(expected_states):
     def wrapper1(func):
@@ -258,7 +262,6 @@ class ManageCandidate2View(tables.MultiTableView, ManageCandidateBase):
         projectid = self.kwargs['projectid']
         project = project_db_handle.GetProjectInstanceById(projectid)
         excluders = [{'var': 'suozaidaiwei', 'operator': 'exact', 'words': project.shenbaodanwei}]
-        excluders = excluders + [{'var': 'hezuodaiwei', 'operator': 'exact', 'words': project.hezuodanwei}]
         filters = []
         _filters = {'state': 'approved'}
         expert_db_handle.dict2filter(filters, _filters)
@@ -297,6 +300,66 @@ class ManageReviewerView(tables.DataTableView, ManageReviewerBase):
     def get_data(self):
         return self.get_reviewers(settitle=True)
 
+def get_age1(expert):
+    today = date.today()
+    born = expert.born
+    try: 
+        if born:
+            birthday = born.replace(year=today.year)
+        else:
+            return '-'
+    except ValueError: # raised when birth date is February 29 and the current year is not a leap year
+        birthday = born.replace(year=today.year, day=born.day-1)
+    if birthday > today:
+        return "%d" % (today.year - born.year - 1)
+    else:
+        return "%d" % (today.year - born.year)
+
+#  保存审查专家列表到docx
+def write_docx(experts,project):
+    today = date.today()
+    #fp = open("log.txt","r+")
+    #project.name
+    #loop = 0;
+    #name = ''
+    #mail = ''
+    #zhicheng = ''
+    #suozaidaiwei = ''
+    #age = ''
+    #for expert in experts:
+    #    loop = loop + 1
+    #    name = name + expert.expertname
+    #    mail = mail + str(expert.email)
+    #    zhicheng = zhicheng + str(expert.zhicheng)
+    #    suozaidaiwei = suozaidaiwei + str(expert.suozaidaiwei)
+    #    age = age + ': ' +str(get_age1(expert))
+
+    #fp.write(str(loop)+ name + 'mail:\n'+ mail +'\n zhicheng:' + zhicheng +'\nchusheng'+ suozaidaiwei + '\nage'+ age)
+    #fp.close()
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+    document = Document('/var/www/expertreview/download/template.docx')
+
+    table = document.tables[0]
+    rowindex = 0
+   
+    for expert in experts:
+        rowindex =  rowindex + 1
+        row_cells = table.add_row().cells
+        row_cells[0].text = str(rowindex).decode('UTF-8')
+        row_cells[1].text = str(expert.expertname).decode('UTF-8')
+        row_cells[2].text = str(expert.suozaidaiwei).decode('UTF-8')
+        row_cells[3].text = str(expert.zhicheng).decode('UTF-8')
+
+
+    row_cells = table.add_row().cells
+    row_cells[0].merge(row_cells[5])
+    row_cells[0].text =  u'                               合计： '
+
+    document.save('/var/www/expertreview/download/experts.docx')
+
+
+       
 # 查看评审专家列表
 class ViewReviewerView(tables.DataTableView, ManageReviewerBase):
     template_name = 'admin/projectmgmt/viewreviewer.html'
@@ -305,7 +368,10 @@ class ViewReviewerView(tables.DataTableView, ManageReviewerBase):
 
     @check_project_state(['kickoff', 'start_review', 'finished'])
     def get_data(self):
-        return self.get_reviewers(settitle=True)
+        experts = self.get_reviewers(settitle=True)
+        project = self.get_project()
+        write_docx(experts,project)
+        return experts
 
 class StartReviewView(forms.ModalFormView):
     template_name = 'admin/projectmgmt/startreview.html'
